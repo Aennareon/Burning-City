@@ -1,0 +1,1 @@
+Farms are [[Production buildings]] that will spawn in the [[Fields]]. This building has some secundary elements.

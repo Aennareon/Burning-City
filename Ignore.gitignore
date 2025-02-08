@@ -1,0 +1,7 @@
+# Ignorar archivos de compilación de Unity
+Library/
+Temp/
+Logs/
+Obj/
+Build/
+Builds/

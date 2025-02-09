@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ZonasInicio\DrawZone.cs" />
+    <Compile Include="Assets\Scripts\ZonasInicio\ZoneData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

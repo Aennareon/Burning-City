@@ -16,9 +16,13 @@ The game is being developed in **Unity 6** as a solo project.
 ## 🎮 Features
 
 ✅ **Dynamic City Management** – Balance security, economy, and diplomacy in a living city.
+
 ✅ **Crisis Response** – Deal with natural disasters, magical anomalies, and unexpected threats.
+
 ✅ **Tactical Combat** – Deploy forces strategically to handle threats efficiently.
+
 ✅ **Diverse Inhabitants** – Interact with multiple fantasy species, each with unique needs and challenges.
+
 
 ---
 

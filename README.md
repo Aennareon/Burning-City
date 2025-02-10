@@ -55,10 +55,10 @@ This project is subject to a modified **MIT license** that includes several clos
 
 **Important!** Collaborating on this project will not provide economic benefits to any participant since I am the only one with permission to commercialize this project in its final version.
 
-See [LICENSE.md]([LICENSE.md](https://github.com/Aennareon/Burning-City/blob/main/LICENSE)) for details.
+See [LICENSE.md](https://github.com/Aennareon/Burning-City/blob/main/LICENSE) for details.
 
 ---
 
 ### 📧 Contact
-📨 For any inquiries, reach out via [email](xarxamiquelriera@gmail.com)
+📨 For any inquiries, reach out via xarxamiquelriera@gmail.com.
 

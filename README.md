@@ -31,13 +31,15 @@ This project is currently in **active development**. More updates will be shared
 
 ---
 
-## 📥 Installation
+## 📥 Installation & Packages
 ⚠️ **TBA** – The game is still under development. A build will be available in future updates.
+🧺 3DAssets/Artwork/UnityAssets will be avaylable for personal use as they arrive.
 
 ---
 
 ## 🤝 Contributing
-At this stage, this is a **solo project**. However, **feedback and suggestions are welcome!**
+At this stage, this is a **solo project**. However, I am open to suggestions and collaborations. 
+IMPORTANT! This project will be part of my personal portfolio so all contributions will be reviewed to ensure they are appropriate for personal and commercial use.
 
 Feel free to open issues or discussions.
 
@@ -51,5 +53,5 @@ See [LICENSE.md](LICENSE.md) for details.
 ---
 
 ### 📧 Contact
-📨 For any inquiries, reach out via [email@example.com](mailto:email@example.com)
+📨 For any inquiries, reach out via [email](xarxamiquelriera@gmail.com)
 

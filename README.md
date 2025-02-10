@@ -1,7 +1,5 @@
 # Burning-City
 
-![Burning City Logo](assets/logo.png)
-
 ## Overview
 **Burning City** is a **3D strategy and management game** where you take on the role of the security commander of a fantasy city. Your responsibilities include:
 
@@ -33,7 +31,7 @@ This project is currently in **active development**. More updates will be shared
 
 ## 📥 Installation & Packages
 ⚠️ **TBA** – The game is still under development. A build will be available in future updates.
-🧺 3DAssets/Artwork/UnityAssets will be avaylable for personal use as they arrive.
+🧺 3DAssets/Artwork/UnityAssets will be avaylable for personal use as they arrive for free personal and comercial use
 
 ---
 
@@ -46,7 +44,7 @@ Feel free to open issues or discussions.
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License**.
+This project is subject to a modified **MIT license** that includes several closures to ensure that the project is mine now and always but recognizing the work of all participants.
 
 See [LICENSE.md](LICENSE.md) for details.
 

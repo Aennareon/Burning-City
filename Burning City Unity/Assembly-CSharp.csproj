@@ -61,8 +61,9 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ZonasInicio\DrawZone.cs" />
-    <Compile Include="Assets\Scripts\ZonasInicio\ZoneData.cs" />
+    <Compile Include="Assets\Scripts\ZoneEditor\ZoneData.cs" />
+    <Compile Include="Assets\Scripts\ZoneEditor\FarmFildData.cs" />
+    <Compile Include="Assets\Scripts\ZoneEditor\DrawZone.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

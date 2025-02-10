@@ -1,21 +1,28 @@
-MIT License
+MIT Modified - Non-Commercial License (Development Only)  
 
-Copyright (c) 2025 Miquel Riera
+Copyright (c) 2025 Miquel Riera Feliu de la Peña 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, modify, and distribute the Software for personal and non-commercial purposes **only in its development versions**, subject to the following conditions:  
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. **Development Version Only**: This license applies exclusively to the development versions of the Software. The terms outlined here may not apply to or may change for the final released build of the Software.  
+2. **Non-Commercial Use**: Any commercial use of the Software, including but not limited to selling, licensing, or monetizing, is strictly prohibited.  
+3. **Attribution & Contributor Credit**:  
+   - All contributors will receive due credit for their contributions during the development phase.  
+   - In the final released build, only contributors whose work remains in the final product will be credited directly.  
+   - A separate acknowledgment will be maintained listing all contributors, regardless of whether their work appears in the final build.  
+   - Contributors must provide their full name to be credited properly in the final version. If no name is provided, contributions will be credited under their GitHub username or the username associated with their commits.  
+4. **Ownership**: The original project owner ([YOUR NAME]) retains all ownership rights and is the sole beneficiary of any future exploitation of the Software.  
+5. **Warranty Disclaimer**: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+---
+
+### **Assets & Packages**  
+
+1. **Free Use of Assets**: Any 3D models, artwork, Unity assets, or other media (hereafter referred to as "Assets") uploaded to this repository will be made available for **free use** under the intention of supporting non-commercial projects and collaborations.  
+2. **Different License for Assets**: These Assets will be published with a **separate license** that governs their use. The terms of the Assets' license will be clearly specified within their respective folders or files, and may include restrictions such as:
+   - Non-commercial use only.
+   - No redistribution or reselling without prior permission.
+   - Requirements for attribution.
+3. **License Changes**: The terms of the Assets’ license may vary between different packages or updates. The owner of the repository reserves the right to modify or update the licensing terms for the Assets at any time.  
+4. **Separation of Software and Assets**: The Software (code) and the Assets (media) will have separate licensing. The Software is governed by the terms of this license, while the Assets will be governed by their respective licenses.  
+

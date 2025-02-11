@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-[CreateAssetMenu(fileName = "ZoneData", menuName = "CityData/Zone Data Object")]
 public class ZoneData : ScriptableObject
 {
     [Header("Zones Limits")]
     public List<Vector3> zoneLimits;
     public List<SubZone> subZones = new List<SubZone>();  // Inicializar la lista de subzonas
     public List<Vector3> spawnPoints = new List<Vector3>();  // Inicializar la lista de puntos de spawn
+    public Color zoneColor;
 
     [Header("Zone Settings")]
     public int zoneSubdivisions;
@@ -21,7 +21,7 @@ public class ZoneData : ScriptableObject
         if (zoneLimits != null && zoneLimits.Count >= 3 && numberOfDivisions > 1)
         {
             // Subdividimos la zona principal
-            List<Vector3> subdividedPolygon = SubdividePolygon(zoneLimits, zoneDefinition);
+            List<Vector3> subdividedPolygon = SubdividePolygon(zoneLimits, zoneDefinition * 2);
             Vector3 originalCentroid = CalculateCentroid(zoneLimits);
             spawnPoints.Add(originalCentroid);
 
@@ -59,6 +59,11 @@ public class ZoneData : ScriptableObject
 
                 SubZone newSubZone = new SubZone(subZoneLimitsList);
                 subZones.Add(newSubZone);
+            }
+
+            foreach (var subZone in subZones)
+            {
+                spawnPoints.Add(CalculateCentroid(subZone.limits));
             }
         }
     }

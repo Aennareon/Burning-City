@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
+using Unity.VisualScripting;
 
 [ExecuteAlways]
 public class DrawZone : MonoBehaviour
@@ -27,11 +28,11 @@ public class DrawZone : MonoBehaviour
         if (zoneData != null)
         {
             // Dibujar la zona principal
-            Gizmos.color = Color.green;
+            Gizmos.color = zoneData.zoneColor;
             DrawPolygonGizmo(zoneData.zoneLimits);
 
             // Dibujar las subzonas y sus centroides
-            Gizmos.color = Color.red;
+            Gizmos.color = zoneData.zoneColor;
             for (int i = 0; i < zoneData.subZones.Count; i++)
             {
                 var subZone = zoneData.subZones[i];
@@ -39,13 +40,30 @@ public class DrawZone : MonoBehaviour
 
                 // Dibujar el centroide de la subzona
                 Vector3 subZoneCentroid = CalculateCentroid(subZone.limits);
-                Gizmos.DrawSphere(subZoneCentroid, 0.3f);
 
                 // Mostrar el nombre de la producción sobre el centroide
                 if (zoneData is FarmFildData farmData && i < farmData.listOfProductions.Count)
                 {
                     string label = farmData.listOfProductions[i].ToString();
-                    Handles.Label(subZoneCentroid, label); // Usa Handles para etiquetar sobre el gizmo
+                    Handles.Label(subZoneCentroid + Vector3.up, label); // Usa Handles para etiquetar sobre el gizmo
+                }
+
+                if (zoneData is MiningZoneData miningData && i < miningData.listOfProductions.Count)
+                {
+                    string label = miningData.listOfProductions[i].ToString();
+                    Handles.Label(subZoneCentroid + Vector3.up, label); // Usa Handles para etiquetar sobre el gizmo
+                }
+
+                if (zoneData is WoodlandWorkcamp woodsData && i < woodsData.listOfProductions.Count)
+                {
+                    string label = woodsData.listOfProductions[i].ToString();
+                    Handles.Label(subZoneCentroid + Vector3.up, label); // Usa Handles para etiquetar sobre el gizmo
+                }
+
+                if (zoneData is WaterWorkZoneData waterData && i < waterData.listOfProductions.Count)
+                {
+                    string label = waterData.listOfProductions[i].ToString();
+                    Handles.Label(subZoneCentroid + Vector3.up, label); // Usa Handles para etiquetar sobre el gizmo
                 }
             }
 
@@ -53,7 +71,7 @@ public class DrawZone : MonoBehaviour
             Gizmos.color = Color.blue;
             foreach (var point in zoneData.spawnPoints)
             {
-                Gizmos.DrawSphere(point, 0.3f);
+                Gizmos.DrawSphere(point, 0.2f);
             }
         }
     }

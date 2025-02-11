@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static FarmFildData;
 
-[CreateAssetMenu(fileName = "FarmFildData", menuName = "CityData/Farm Field Zone Data Object")]
-public class FarmFildData : ZoneData
+[CreateAssetMenu(fileName = "MiningZoneData", menuName = "CityData/Zone Data/Mining Area Zone Data Object")]
+public class MiningZoneData : ZoneData
 {
     [System.Serializable]
-    public enum FieldProductionTypes { AnimalField, GrainField, GrassField };
+    public enum MineProductionTypes { Gold, Iron, ArcanaStones };
 
     [Header("Farm Field Settings")]
-    public List<FieldProductionTypes> listOfProductions = new List<FieldProductionTypes>();
-
+    public List<MineProductionTypes> listOfProductions = new List<MineProductionTypes>();
     private void OnValidate()
     {
         zoneSubdivisions = listOfProductions.Count;

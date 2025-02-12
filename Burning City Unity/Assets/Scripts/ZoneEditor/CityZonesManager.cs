@@ -27,12 +27,24 @@ public class CityZonesManager : ScriptableObject
 
     [Header("City Zones")]
     public List<ZoneData> cityZones;
+    public List<Vector3> AllSpawnPoints;
 
     private void OnValidate()
     {
         cityZones = FindAllScriptableObjects<ZoneData>();
         UpdateZonesToPrefabZones();
+
+        AllSpawnPoints.Clear(); // Limpiar la lista antes de copiar los valores
+
+        foreach (var zone in cityZones)
+        {
+            if (zone.spawnPoints != null)
+            {
+                AllSpawnPoints.AddRange(zone.spawnPoints);
+            }
+        }
     }
+
 
     public static List<T> FindAllScriptableObjects<T>() where T : ScriptableObject
     {

@@ -69,19 +69,6 @@ public class PathDraw : MonoBehaviour
         {
             Gizmos.DrawSphere(cross.position, 0.3f);
         }
-
-        // Dibujar las conexiones distantes
-        Gizmos.color = Color.cyan;
-        for (int i = 0; i < crossPathPoints.Count; i++)
-        {
-            for (int j = i + 1; j < crossPathPoints.Count; j++)
-            {
-                if (Vector3.Distance(crossPathPoints[i].position, crossPathPoints[j].position) > 10f)
-                {
-                    Gizmos.DrawLine(crossPathPoints[i].position, crossPathPoints[j].position);
-                }
-            }
-        }
     }
 #endif
 
@@ -274,5 +261,31 @@ public class PathDraw : MonoBehaviour
                 }
             }
         }
+    }
+
+    private bool IsPointInPolygon(Vector3 point, List<Vector3> polygon)
+    {
+        bool isInside = false;
+        for (int i = 0, j = polygon.Count - 1; i < polygon.Count; j = i++)
+        {
+            if (((polygon[i].z > point.z) != (polygon[j].z > point.z)) &&
+                (point.x < (polygon[j].x - polygon[i].x) * (point.z - polygon[i].z) / (polygon[j].z - polygon[i].z) + polygon[i].x))
+            {
+                isInside = !isInside;
+            }
+        }
+        return isInside;
+    }
+
+    private bool IsPathWithinZone(PathFlow path, List<Vector3> zoneLimits)
+    {
+        foreach (var point in path.pathRoute)
+        {
+            if (!IsPointInPolygon(point.position, zoneLimits))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

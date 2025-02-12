@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\WaterWorkZoneData.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesManager.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\WoodlandWorkcamp.cs" />
+    <Compile Include="Assets\Scripts\PathSystem\DrawPath.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\MiningZoneData.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\ZoneData.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\DrawZone.cs" />

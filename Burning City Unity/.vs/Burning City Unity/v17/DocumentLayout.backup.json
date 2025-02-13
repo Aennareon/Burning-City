@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\pathsystem\\drawpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathsystem\\drawpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\historysystem\\newmonobehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\newmonobehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\historysystem\\basehistoryevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\basehistoryevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\newracehv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\newracehv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\historyeventsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\historyeventsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DrawPath.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\PathSystem\\DrawPath.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PathSystem\\DrawPath.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\PathSystem\\DrawPath.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PathSystem\\DrawPath.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwIEAAAAnAAAAAAAAAA==",
+              "Title": "NewMonoBehaviourScript.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\NewMonoBehaviourScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\NewMonoBehaviourScript.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\NewMonoBehaviourScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\NewMonoBehaviourScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:49:50.487Z",
+              "WhenOpened": "2025-02-13T10:48:32.959Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HistoryEventsData.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:10:49.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseHistoryEvent.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:04:24.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewRaceHV.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:07:59.617Z"
             }
           ]
         }

@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\zoneeditor\\cityzonesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zoneeditor\\cityzonesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\newracehv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\newracehv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\zoneeditor\\drawzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zoneeditor\\drawzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\basehistoryevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\basehistoryevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\zoneeditor\\cityzonesdata\\farmfilddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zoneeditor\\cityzonesdata\\farmfilddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\zoneeditor\\cityzonesdata\\miningzonedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zoneeditor\\cityzonesdata\\miningzonedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\zoneeditor\\cityzonesdata\\woodlandworkcamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zoneeditor\\cityzonesdata\\woodlandworkcamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\zoneeditor\\cityzonesdata\\zonedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zoneeditor\\cityzonesdata\\zonedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\historyeventsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\historyeventsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DrawZone.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\DrawZone.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ZoneEditor\\DrawZone.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\DrawZone.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ZoneEditor\\DrawZone.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HistoryEventsData.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T14:26:11.109Z",
+              "WhenOpened": "2025-02-13T10:10:49.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseHistoryEvent.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:04:24.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CityZonesManager.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ZoneEditor\\CityZonesManager.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ZoneEditor\\CityZonesManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "NewRaceHV.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\NewRaceHV.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T14:26:07.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FarmFildData.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\FarmFildData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\FarmFildData.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\FarmFildData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\FarmFildData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T14:26:03.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MiningZoneData.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\MiningZoneData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\MiningZoneData.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\MiningZoneData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\MiningZoneData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T14:26:00.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WoodlandWorkcamp.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\WoodlandWorkcamp.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\WoodlandWorkcamp.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\WoodlandWorkcamp.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\WoodlandWorkcamp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T14:25:51.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ZoneData.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\ZoneData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\ZoneData.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\ZoneEditor\\CityZonesData\\ZoneData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ZoneEditor\\CityZonesData\\ZoneData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T14:24:30.384Z",
+              "WhenOpened": "2025-02-13T10:07:59.617Z",
               "EditorCaption": ""
             }
           ]

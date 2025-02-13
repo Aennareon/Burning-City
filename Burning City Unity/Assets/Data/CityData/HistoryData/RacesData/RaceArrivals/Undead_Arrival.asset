@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
+  m_Name: Undead_Arrival
+  m_EditorClassIdentifier: 
+  yearOfEvent: 0
+  nameOfEvent: 
+  descriptionOfEvent: 
+  raceName: 5
+  raceAligmentOnArrival: 0
+  raceDescription: 
+  religionOnArrival: 3
+  arrivalReason: 2
+  arrivalType: 4
+  treatmentReason: 4
+  moveInLocation: 0
+  attitudeCityState: 0
+  raceArrivalText: ' - Year 0 -
+
+
+    .
+
+
+    The Undead arrived in the year 0. They
+    arrived while they were on a adventure journey. At the time of their arrival,
+    they were . At that time they were believers of the god of love.
+
+
+    They arrived
+    at the city and were tolerated due to kinship of the city''s inhabitants. They
+    ended up settling in the innercity, where they formed a community with the objective
+    of helping the city.
+
+
+'

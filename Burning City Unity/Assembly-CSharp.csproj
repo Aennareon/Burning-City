@@ -63,15 +63,23 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\FarmFildData.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\WaterWorkZoneData.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceEvent\RaceChangeEvent.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceEvent\RaceConflictStartEvent.cs" />
     <Compile Include="Assets\Scripts\HistorySystem\BaseHistoryEvent.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesManager.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\WoodlandWorkcamp.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceEvent\RaceConflictEndEvent.cs" />
     <Compile Include="Assets\Scripts\PathSystem\DrawPath.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\Arrival\NewRaceHV.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\MiningZoneData.cs" />
-    <Compile Include="Assets\Scripts\HistorySystem\NewRaceHV.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\ZoneData.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\Arrival\RaceArrivalManager.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\DrawZone.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceData\RaceData.cs" />
     <Compile Include="Assets\Scripts\HistorySystem\HistoryEventsData.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\Arrival\RaceArrivalDatabase.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceData\RaceDatabase.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceData\RaceDataManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

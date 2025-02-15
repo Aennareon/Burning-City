@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raceName: 15
   raceDescription: 
-  raceAlignment: 0
-  religion: 3
-  residenceLocation: 2
-  cityObjective: 1
+  raceAlignment: 79
+  religion: 13
+  residenceLocation: 15
+  cityObjective: 7

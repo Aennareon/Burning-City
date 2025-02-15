@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Orcs_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 379
+  nameOfEvent: Arrival of the Orcs
   descriptionOfEvent: 
   raceName: 3
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 52
   raceDescription: 
-  religionOnArrival: 1
-  arrivalReason: 7
-  arrivalType: 1
-  treatmentReason: 5
-  moveInLocation: 4
-  attitudeCityState: 1
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 11
+  arrivalReason: 20
+  arrivalType: 3
+  treatmentReason: 15
+  moveInLocation: 8
+  attitudeCityState: 13
+  raceArrivalText: 'Arrival of the Orcs - Year 379 -
 
 
     .
 
 
-    The Orcs arrived in the year 0. They
-    arrived while they were on a curiosity journey. At the time of their arrival,
-    they were . At that time they were believers of the god of light.
+    The Orcs arrived
+    in the year 379. They arrived while they were on a exile journey. At the time
+    of their arrival, they were . At that time they were believers of the god of
+    arcana.
 
 
-    They
-    arrived at the city and were celebrated due to alliance of the city''s inhabitants.
-    They ended up settling in the marketplace, where they formed a community with
-    the objective of protecting the city.
+    They arrived at the city and were integrated due to envy of the
+    city''s inhabitants. They ended up settling in the military, where they formed
+    a community with the objective of controlling the city.
 
 
 '

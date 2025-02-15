@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Phoenixes_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 919
+  nameOfEvent: Arrival of the Phoenixes
   descriptionOfEvent: 
   raceName: 28
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 84
   raceDescription: 
-  religionOnArrival: 10
-  arrivalReason: 3
-  arrivalType: 5
-  treatmentReason: 8
-  moveInLocation: 4
-  attitudeCityState: 1
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 21
+  arrivalReason: 17
+  arrivalType: 11
+  treatmentReason: 17
+  moveInLocation: 8
+  attitudeCityState: 8
+  raceArrivalText: 'Arrival of the Phoenixes - Year 919 -
 
 
     .
 
 
-    The Phoenixes arrived in the year 0.
-    They arrived while they were on a pilgrimage journey. At the time of their arrival,
-    they were . At that time they were believers of the god of technology.
+    The Phoenixes
+    arrived in the year 919. They arrived while they were on a disaster journey.
+    At the time of their arrival, they were . At that time they were believers of
+    the god of vengeance.
 
 
-    They
-    arrived at the city and were assimilated due to tradition of the city''s inhabitants.
-    They ended up settling in the marketplace, where they formed a community with
-    the objective of protecting the city.
+    They arrived at the city and were enslaved due to
+    fear of the city''s inhabitants. They ended up settling in the military, where
+    they formed a community with the objective of trading the city.
 
 
 '

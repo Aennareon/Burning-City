@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ed10e44a73d9546b08a599fd83338a, type: 3}
+  m_Name: Race Change_ Other_Change
+  m_EditorClassIdentifier: 
+  yearOfEvent: 1059
+  nameOfEvent: 'Race Change: Other'
+  descriptionOfEvent: 
+  raceName: 15
+  changeReason: Cultural assimilation
+  changeResidenceLocation: 0
+  newResidenceLocation: 0
+  changeAlignment: 1
+  newAlignment: 0
+  changeReligion: 0
+  newReligion: 0
+  changeCityObjective: 0
+  newCityObjective: 0
+  raceChangeText: 

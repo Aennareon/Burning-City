@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Vampires_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 991
+  nameOfEvent: Arrival of the Vampires
   descriptionOfEvent: 
   raceName: 20
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 22
   raceDescription: 
-  religionOnArrival: 9
-  arrivalReason: 10
-  arrivalType: 3
+  religionOnArrival: 0
+  arrivalReason: 5
+  arrivalType: 5
   treatmentReason: 3
-  moveInLocation: 0
-  attitudeCityState: 2
-  raceArrivalText: ' - Year 0 -
+  moveInLocation: 3
+  attitudeCityState: 6
+  raceArrivalText: 'Arrival of the Vampires - Year 991 -
 
 
     .
 
 
-    The Vampires arrived in the year 0.
-    They arrived while they were on a migration journey. At the time of their arrival,
-    they were . At that time they were believers of the god of nature.
+    The Vampires
+    arrived in the year 991. They arrived while they were on a prophecy journey.
+    At the time of their arrival, they were . At that time they were believers of
+    the god of life.
 
 
-    They
-    arrived at the city and were integrated due to cooperation of the city''s inhabitants.
-    They ended up settling in the innercity, where they formed a community with the
-    objective of rebuilding the city.
+    They arrived at the city and were assimilated due to cooperation
+    of the city''s inhabitants. They ended up settling in the refugeecamp, where
+    they formed a community with the objective of governing the city.
 
 
 '

@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Chimeras_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 368
+  nameOfEvent: Arrival of the Chimeras
   descriptionOfEvent: 
   raceName: 30
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 57
   raceDescription: 
-  religionOnArrival: 11
-  arrivalReason: 0
-  arrivalType: 3
-  treatmentReason: 8
-  moveInLocation: 1
-  attitudeCityState: 1
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 3
+  arrivalReason: 17
+  arrivalType: 14
+  treatmentReason: 2
+  moveInLocation: 10
+  attitudeCityState: 14
+  raceArrivalText: 'Arrival of the Chimeras - Year 368 -
 
 
     .
 
 
-    The Chimeras arrived in the year 0.
-    They arrived while they were on a trade journey. At the time of their arrival,
-    they were . At that time they were believers of the god of arcana.
+    The Chimeras
+    arrived in the year 368. They arrived while they were on a disaster journey.
+    At the time of their arrival, they were . At that time they were believers of
+    the god of love.
 
 
-    They
-    arrived at the city and were integrated due to tradition of the city''s inhabitants.
-    They ended up settling in the outtercity, where they formed a community with
-    the objective of protecting the city.
+    They arrived at the city and were rejected due to friendship
+    of the city''s inhabitants. They ended up settling in the educational, where
+    they formed a community with the objective of spying the city.
 
 
 '

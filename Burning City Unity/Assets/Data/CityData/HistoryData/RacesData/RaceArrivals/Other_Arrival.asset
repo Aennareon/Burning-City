@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Other_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 846
+  nameOfEvent: Arrival of the Other
   descriptionOfEvent: 
   raceName: 15
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 79
   raceDescription: 
-  religionOnArrival: 4
-  arrivalReason: 8
-  arrivalType: 4
-  treatmentReason: 2
-  moveInLocation: 4
-  attitudeCityState: 2
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 13
+  arrivalReason: 13
+  arrivalType: 14
+  treatmentReason: 18
+  moveInLocation: 15
+  attitudeCityState: 7
+  raceArrivalText: 'Arrival of the Other - Year 846 -
 
 
     .
 
 
-    The Other arrived in the year 0. They
-    arrived while they were on a alliance journey. At the time of their arrival,
-    they were . At that time they were believers of the god of justice.
+    The Other arrived
+    in the year 846. They arrived while they were on a refuge journey. At the time
+    of their arrival, they were . At that time they were believers of the god of
+    water.
 
 
-    They
-    arrived at the city and were tolerated due to friendship of the city''s inhabitants.
-    They ended up settling in the marketplace, where they formed a community with
-    the objective of rebuilding the city.
+    They arrived at the city and were rejected due to hatred of the
+    city''s inhabitants. They ended up settling in the harbor, where they formed
+    a community with the objective of negotiating the city.
 
 
 '

@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Satyrs_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 485
+  nameOfEvent: Arrival of the Satyrs
   descriptionOfEvent: 
   raceName: 26
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 71
   raceDescription: 
-  religionOnArrival: 2
-  arrivalReason: 1
-  arrivalType: 6
-  treatmentReason: 1
-  moveInLocation: 5
-  attitudeCityState: 8
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 23
+  arrivalReason: 11
+  arrivalType: 10
+  treatmentReason: 10
+  moveInLocation: 15
+  attitudeCityState: 12
+  raceArrivalText: 'Arrival of the Satyrs - Year 485 -
 
 
     .
 
 
-    The Satyrs arrived in the year 0. They
-    arrived while they were on a exploration journey. At the time of their arrival,
-    they were . At that time they were believers of the god of wisdom.
+    The Satyrs arrived
+    in the year 485. They arrived while they were on a survival journey. At the time
+    of their arrival, they were . At that time they were believers of the god of
+    darkness.
 
 
-    They
-    arrived at the city and were liberated due to admiration of the city''s inhabitants.
-    They ended up settling in the residential, where they formed a community with
-    the objective of trading the city.
+    They arrived at the city and were exploited due to politics of
+    the city''s inhabitants. They ended up settling in the harbor, where they formed
+    a community with the objective of defending the city.
 
 
 '

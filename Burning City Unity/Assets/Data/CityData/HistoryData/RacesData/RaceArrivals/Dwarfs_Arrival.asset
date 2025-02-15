@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Dwarfs_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 935
+  nameOfEvent: Arrival of the Dwarfs
   descriptionOfEvent: 
   raceName: 2
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 2
   raceDescription: 
-  religionOnArrival: 1
+  religionOnArrival: 6
   arrivalReason: 1
-  arrivalType: 7
-  treatmentReason: 3
-  moveInLocation: 0
-  attitudeCityState: 2
-  raceArrivalText: ' - Year 0 -
+  arrivalType: 6
+  treatmentReason: 2
+  moveInLocation: 2
+  attitudeCityState: 3
+  raceArrivalText: 'Arrival of the Dwarfs - Year 935 -
 
 
     .
 
 
-    The Dwarfs arrived in the year 0. They
-    arrived while they were on a exploration journey. At the time of their arrival,
-    they were . At that time they were believers of the god of light.
+    The Dwarfs arrived
+    in the year 935. They arrived while they were on a exploration journey. At the
+    time of their arrival, they were . At that time they were believers of the god
+    of reason.
 
 
-    They
-    arrived at the city and were revered due to cooperation of the city''s inhabitants.
-    They ended up settling in the innercity, where they formed a community with the
-    objective of rebuilding the city.
+    They arrived at the city and were liberated due to friendship
+    of the city''s inhabitants. They ended up settling in the countryside, where
+    they formed a community with the objective of educating the city.
 
 
 '

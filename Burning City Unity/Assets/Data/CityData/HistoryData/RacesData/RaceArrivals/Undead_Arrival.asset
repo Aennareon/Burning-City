@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Undead_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 990
+  nameOfEvent: Arrival of the Undead
   descriptionOfEvent: 
   raceName: 5
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 22
   raceDescription: 
-  religionOnArrival: 3
-  arrivalReason: 2
-  arrivalType: 4
-  treatmentReason: 4
-  moveInLocation: 0
-  attitudeCityState: 0
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 6
+  arrivalReason: 10
+  arrivalType: 2
+  treatmentReason: 9
+  moveInLocation: 4
+  attitudeCityState: 13
+  raceArrivalText: 'Arrival of the Undead - Year 990 -
 
 
     .
 
 
-    The Undead arrived in the year 0. They
-    arrived while they were on a adventure journey. At the time of their arrival,
-    they were . At that time they were believers of the god of love.
+    The Undead arrived
+    in the year 990. They arrived while they were on a migration journey. At the
+    time of their arrival, they were . At that time they were believers of the god
+    of reason.
 
 
-    They arrived
-    at the city and were tolerated due to kinship of the city''s inhabitants. They
-    ended up settling in the innercity, where they formed a community with the objective
-    of helping the city.
+    They arrived at the city and were honored due to superstition
+    of the city''s inhabitants. They ended up settling in the marketplace, where
+    they formed a community with the objective of controlling the city.
 
 
 '

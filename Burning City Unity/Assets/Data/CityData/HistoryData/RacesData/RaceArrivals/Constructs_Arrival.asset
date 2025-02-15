@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Constructs_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 341
+  nameOfEvent: Arrival of the Constructs
   descriptionOfEvent: 
   raceName: 14
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 94
   raceDescription: 
-  religionOnArrival: 7
-  arrivalReason: 10
-  arrivalType: 5
-  treatmentReason: 8
-  moveInLocation: 3
-  attitudeCityState: 5
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 19
+  arrivalReason: 20
+  arrivalType: 9
+  treatmentReason: 10
+  moveInLocation: 12
+  attitudeCityState: 12
+  raceArrivalText: 'Arrival of the Constructs - Year 341 -
 
 
     .
 
 
-    The Constructs arrived in the year
-    0. They arrived while they were on a migration journey. At the time of their
-    arrival, they were . At that time they were believers of the god of fertility.
+    The Constructs
+    arrived in the year 341. They arrived while they were on a exile journey. At
+    the time of their arrival, they were . At that time they were believers of the
+    god of chaos.
 
 
-    They
-    arrived at the city and were assimilated due to tradition of the city''s inhabitants.
-    They ended up settling in the refugeecamp, where they formed a community with
-    the objective of entertaining the city.
+    They arrived at the city and were mistrusted due to politics
+    of the city''s inhabitants. They ended up settling in the commercial, where they
+    formed a community with the objective of defending the city.
 
 
 '

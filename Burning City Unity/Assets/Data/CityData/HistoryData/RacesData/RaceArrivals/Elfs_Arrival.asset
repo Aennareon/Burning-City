@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Elfs_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 626
+  nameOfEvent: Arrival of the Elfs
   descriptionOfEvent: 
   raceName: 1
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 91
   raceDescription: 
-  religionOnArrival: 1
-  arrivalReason: 1
-  arrivalType: 2
-  treatmentReason: 9
-  moveInLocation: 4
-  attitudeCityState: 7
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 21
+  arrivalReason: 13
+  arrivalType: 10
+  treatmentReason: 20
+  moveInLocation: 9
+  attitudeCityState: 9
+  raceArrivalText: 'Arrival of the Elfs - Year 626 -
 
 
     .
 
 
-    The Elfs arrived in the year 0. They
-    arrived while they were on a exploration journey. At the time of their arrival,
-    they were . At that time they were believers of the god of light.
+    The Elfs arrived
+    in the year 626. They arrived while they were on a refuge journey. At the time
+    of their arrival, they were . At that time they were believers of the god of
+    vengeance.
 
 
-    They
-    arrived at the city and were honored due to superstition of the city''s inhabitants.
-    They ended up settling in the marketplace, where they formed a community with
-    the objective of negotiating the city.
+    They arrived at the city and were exploited due to unknown of
+    the city''s inhabitants. They ended up settling in the religious, where they
+    formed a community with the objective of innovating the city.
 
 
 '

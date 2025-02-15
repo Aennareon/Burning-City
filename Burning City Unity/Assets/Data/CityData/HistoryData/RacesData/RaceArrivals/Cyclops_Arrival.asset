@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Cyclops_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 917
+  nameOfEvent: Arrival of the Cyclops
   descriptionOfEvent: 
   raceName: 27
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 61
   raceDescription: 
-  religionOnArrival: 7
-  arrivalReason: 0
-  arrivalType: 6
-  treatmentReason: 4
-  moveInLocation: 1
+  religionOnArrival: 17
+  arrivalReason: 13
+  arrivalType: 13
+  treatmentReason: 9
+  moveInLocation: 4
   attitudeCityState: 4
-  raceArrivalText: ' - Year 0 -
+  raceArrivalText: 'Arrival of the Cyclops - Year 917 -
 
 
     .
 
 
-    The Cyclops arrived in the year 0.
-    They arrived while they were on a trade journey. At the time of their arrival,
-    they were . At that time they were believers of the god of fertility.
+    The Cyclops
+    arrived in the year 917. They arrived while they were on a refuge journey. At
+    the time of their arrival, they were . At that time they were believers of the
+    god of space.
 
 
-    They
-    arrived at the city and were liberated due to kinship of the city''s inhabitants.
-    They ended up settling in the outtercity, where they formed a community with
-    the objective of healing the city.
+    They arrived at the city and were segregated due to superstition
+    of the city''s inhabitants. They ended up settling in the marketplace, where
+    they formed a community with the objective of healing the city.
 
 
 '

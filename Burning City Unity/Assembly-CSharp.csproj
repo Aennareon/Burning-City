@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\FarmFildData.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\WaterWorkZoneData.cs" />
     <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceEvent\RaceChangeEvent.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceEvent\RaceIntermediateEventsDatabase.cs" />
     <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceEvent\RaceConflictStartEvent.cs" />
     <Compile Include="Assets\Scripts\HistorySystem\BaseHistoryEvent.cs" />
     <Compile Include="Assets\Scripts\ZoneEditor\CityZonesManager.cs" />
@@ -80,6 +81,8 @@
     <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\Arrival\RaceArrivalDatabase.cs" />
     <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceData\RaceDatabase.cs" />
     <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\RaceData\RaceDataManager.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\Timeline\TimelineManager.cs" />
+    <Compile Include="Assets\Scripts\HistorySystem\RacesHistory\Timeline\RaceEventsTimeline.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

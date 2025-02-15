@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd003cdf808eeb438ccd002e1dbd79e, type: 3}
   m_Name: Spirits_Arrival
   m_EditorClassIdentifier: 
-  yearOfEvent: 0
-  nameOfEvent: 
+  yearOfEvent: 927
+  nameOfEvent: Arrival of the Spirits
   descriptionOfEvent: 
   raceName: 13
-  raceAligmentOnArrival: 0
+  raceAligmentOnArrival: 24
   raceDescription: 
-  religionOnArrival: 1
-  arrivalReason: 2
-  arrivalType: 1
-  treatmentReason: 1
-  moveInLocation: 4
-  attitudeCityState: 1
-  raceArrivalText: ' - Year 0 -
+  religionOnArrival: 11
+  arrivalReason: 0
+  arrivalType: 3
+  treatmentReason: 2
+  moveInLocation: 2
+  attitudeCityState: 10
+  raceArrivalText: 'Arrival of the Spirits - Year 927 -
 
 
     .
 
 
-    The Spirits arrived in the year 0.
-    They arrived while they were on a adventure journey. At the time of their arrival,
-    they were . At that time they were believers of the god of light.
+    The Spirits
+    arrived in the year 927. They arrived while they were on a trade journey. At
+    the time of their arrival, they were . At that time they were believers of the
+    god of arcana.
 
 
-    They
-    arrived at the city and were celebrated due to admiration of the city''s inhabitants.
-    They ended up settling in the marketplace, where they formed a community with
-    the objective of protecting the city.
+    They arrived at the city and were integrated due to friendship
+    of the city''s inhabitants. They ended up settling in the countryside, where
+    they formed a community with the objective of exploring the city.
 
 
 '

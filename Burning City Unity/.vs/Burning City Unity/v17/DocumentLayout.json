@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\historysystem\\raceshistory\\timeline\\timelinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\raceshistory\\timeline\\timelinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\historyeventsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\historyeventsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\historysystem\\raceshistory\\raceevent\\raceintermediateeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\raceshistory\\raceevent\\raceintermediateeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\basehistoryevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\basehistoryevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\historysystem\\raceshistory\\timeline\\raceeventstimeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\raceshistory\\timeline\\raceeventstimeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\raceshistory\\raceevent\\raceconflictendevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\raceshistory\\raceevent\\raceconflictendevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\historysystem\\raceshistory\\raceevent\\raceconflictstartevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\raceshistory\\raceevent\\raceconflictstartevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\historysystem\\racehistorytimeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\historysystem\\racehistorytimeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RaceIntermediateEventsDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceIntermediateEventsDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceIntermediateEventsDatabase.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceIntermediateEventsDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceIntermediateEventsDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:44:46.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RaceConflictEndEvent.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictEndEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictEndEvent.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictEndEvent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictEndEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:16:07.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RaceConflictStartEvent.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictStartEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictStartEvent.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictStartEvent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\RacesHistory\\RaceEvent\\RaceConflictStartEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:16:04.6Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TimelineManager.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\TimelineManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\TimelineManager.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\TimelineManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\TimelineManager.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAkwJ0AAAAAAAAAAAAAAA==",
+              "Title": "HistoryEventsData.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\HistoryEventsData.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAIwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:25:30.873Z",
+              "WhenOpened": "2025-02-15T13:44:49.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RaceEventsTimeline.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\RaceEventsTimeline.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\RaceEventsTimeline.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\RaceEventsTimeline.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\RacesHistory\\Timeline\\RaceEventsTimeline.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAQwHgAAAAAAAAAAAAAAA==",
+              "Title": "RaceHistoryTimeline.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RaceHistoryTimeline.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\RaceHistoryTimeline.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\RaceHistoryTimeline.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\RaceHistoryTimeline.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T09:53:37.856Z",
+              "WhenOpened": "2025-02-15T13:52:31.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseHistoryEvent.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HistorySystem\\BaseHistoryEvent.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:45:05.525Z",
               "EditorCaption": ""
             }
           ]

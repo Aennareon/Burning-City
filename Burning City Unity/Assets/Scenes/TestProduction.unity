@@ -472,7 +472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1309155245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,1113 +488,395 @@ MonoBehaviour:
   zonesManager: {fileID: 11400000, guid: b3029d1ac0f321841a3f2212f078085e, type: 2}
   listOfPaths:
   - pathRoute:
-    - position: {x: 96.92999, y: 0, z: -0.9299998}
+    - position: {x: 8.954286, y: 0, z: 4.1385713}
       pathPointType: 2
-    - position: {x: 96.75057, y: 0, z: -0.17939031}
+    - position: {x: 9.342379, y: 0, z: 3.9975913}
       pathPointType: 0
-    - position: {x: 96.437744, y: 0, z: 0.43781954}
+    - position: {x: 9.404565, y: 0, z: 3.5307033}
       pathPointType: 0
-    - position: {x: 96.045876, y: 0, z: 0.97597367}
+    - position: {x: 9.540154, y: 0, z: 3.1372216}
       pathPointType: 0
-    - position: {x: 95.45856, y: 0, z: 1.3186926}
+    - position: {x: 9.804524, y: 0, z: 2.8725173}
       pathPointType: 0
-    - position: {x: 94.98109, y: 0, z: 1.7712497}
+    - position: {x: 10.152444, y: 0, z: 2.6913638}
       pathPointType: 0
-    - position: {x: 94.475235, y: 0, z: 2.1954324}
+    - position: {x: 10.473558, y: 0, z: 2.4834046}
       pathPointType: 0
-    - position: {x: 93.81116, y: 0, z: 2.4613824}
+    - position: {x: 10.768263, y: 0, z: 2.2490356}
       pathPointType: 0
-    - position: {x: 93.31086, y: 0, z: 2.891127}
+    - position: {x: 11.051985, y: 0, z: 2.0036843}
       pathPointType: 0
-    - position: {x: 93.113815, y: 0, z: 3.62411}
+    - position: {x: 11.319666, y: 0, z: 1.7422934}
       pathPointType: 0
-    - position: {x: 92.60694, y: 0, z: 4.0472665}
+    - position: {x: 11.558391, y: 0, z: 1.4519442}
       pathPointType: 0
-    - position: {x: 91.58714, y: 0, z: 3.9575002}
+    - position: {x: 10.903571, y: 0, z: 0.2680519}
       pathPointType: 0
-    - position: {x: 93.64892, y: 0, z: 4.0283313}
+    - position: {x: 12.083313, y: 0, z: 1.8018839}
       pathPointType: 0
-    - position: {x: 95.48973, y: 0, z: 3.87821}
+    - position: {x: 12.105167, y: 0, z: 2.1778302}
       pathPointType: 0
-    - position: {x: 97.375786, y: 0, z: 3.77332}
+    - position: {x: 12.098594, y: 0, z: 2.5253472}
       pathPointType: 0
-    - position: {x: 98.92014, y: 0, z: 3.3267365}
+    - position: {x: 12.195879, y: 0, z: 2.976723}
       pathPointType: 0
-    - position: {x: 100.37398, y: 0, z: 2.7896292}
+    - position: {x: 12.576157, y: 0, z: 3.711091}
       pathPointType: 0
-    - position: {x: 102.08824, y: 0, z: 2.5129526}
+    - position: {x: 12.986531, y: 0, z: 4.475558}
       pathPointType: 0
-    - position: {x: 104.01699, y: 0, z: 2.4507608}
+    - position: {x: 13.272466, y: 0, z: 5.1155825}
       pathPointType: 0
-    - position: {x: 105.48299, y: 0, z: 1.9258147}
+    - position: {x: 13.586203, y: 0, z: 5.7834096}
       pathPointType: 0
-    - position: {x: 107.460556, y: 0, z: 1.9124386}
+    - position: {x: 13.736427, y: 0, z: 6.287725}
       pathPointType: 0
-    - position: {x: 108.95892, y: 0, z: 1.4198697}
+    - position: {x: 13.766923, y: 0, z: 6.6723127}
       pathPointType: 0
-    - position: {x: 109.9425, y: 0, z: 0.41250023}
+    - position: {x: 13.691753, y: 0, z: 6.9512334}
       pathPointType: 0
-    - position: {x: 108.85585, y: 0, z: 0.39965403}
+    - position: {x: 12.88889, y: 0, z: 6.9883704}
       pathPointType: 0
-    - position: {x: 107.407974, y: 0, z: 0.025574028}
+    - position: {x: 11.912668, y: 0, z: 6.852148}
       pathPointType: 0
-    - position: {x: 105.37949, y: 0, z: -0.9291049}
+    - position: {x: 11.057631, y: 0, z: 6.8371105}
       pathPointType: 0
-    - position: {x: 103.79801, y: 0, z: -1.4367865}
+    - position: {x: 10.1263, y: 0, z: 6.7457814}
       pathPointType: 0
-    - position: {x: 101.72944, y: 0, z: -2.4315717}
+    - position: {x: 9.48527, y: 0, z: 6.944751}
       pathPointType: 0
-    - position: {x: 100.28998, y: 0, z: -2.7972252}
+    - position: {x: 8.2856455, y: 0, z: 6.5851264}
       pathPointType: 0
-    - position: {x: 98.58473, y: 0, z: -3.4286802}
+    - position: {x: 7.359892, y: 0, z: 6.499372}
       pathPointType: 0
-    - position: {x: 97.02484, y: 0, z: -3.9147668}
+    - position: {x: 6.30392, y: 0, z: 6.2834005}
       pathPointType: 0
-    - position: {x: 95.12529, y: 0, z: -4.7405176}
+    - position: {x: 5.3838644, y: 0, z: 6.2033453}
       pathPointType: 0
-    - position: {x: 93.68301, y: 0, z: -5.1090107}
+    - position: {x: 4.3311234, y: 0, z: 5.9906044}
       pathPointType: 0
-    - position: {x: 91.32036, y: 0, z: -6.397857}
+    - position: {x: 2.9460714, y: 0, z: 5.4455523}
+      pathPointType: 0
+    - position: {x: 5.3677917, y: 0, z: 5.821865}
+      pathPointType: 0
+    - position: {x: 7.4706864, y: 0, z: 5.8793526}
+      pathPointType: 0
+    - position: {x: 9.610701, y: 0, z: 5.97396}
+      pathPointType: 0
+    - position: {x: 11.672226, y: 0, z: 5.9900765}
+      pathPointType: 0
+    - position: {x: 13.6218, y: 0, z: 5.894244}
+      pathPointType: 0
+    - position: {x: 15.390524, y: 0, z: 5.61756}
+      pathPointType: 0
+    - position: {x: 17.435894, y: 0, z: 5.6175256}
+      pathPointType: 0
+    - position: {x: 19.525692, y: 0, z: 5.661915}
+      pathPointType: 0
+    - position: {x: 21.026258, y: 0, z: 5.117073}
+      pathPointType: 0
+    - position: {x: 23.137764, y: 0, z: 5.183171}
+      pathPointType: 0
+    - position: {x: 25, y: 0, z: 5}
+      pathPointType: 0
+    - position: {x: 25.463337, y: 0, z: 5.041259}
+      pathPointType: 0
+    - position: {x: 25.571934, y: 0, z: 4.7277794}
+      pathPointType: 0
+    - position: {x: 25.597183, y: 0, z: 4.33095}
+      pathPointType: 0
+    - position: {x: 25.607101, y: 0, z: 3.9187884}
+      pathPointType: 0
+    - position: {x: 25.67007, y: 0, z: 3.559682}
+      pathPointType: 0
+    - position: {x: 25.798006, y: 0, z: 3.2655387}
+      pathPointType: 0
+    - position: {x: 25.926407, y: 0, z: 2.9718623}
+      pathPointType: 0
+    - position: {x: 25.974049, y: 0, z: 2.597425}
+      pathPointType: 0
+    - position: {x: 25.958944, y: 0, z: 2.1602428}
+      pathPointType: 0
+    - position: {x: 26.007915, y: 0, z: 1.7871367}
+      pathPointType: 0
+    - position: {x: 25.714285, y: 0, z: 1.0714285}
+      pathPointType: 0
+    - position: {x: 26.313013, y: 0, z: 1.9948335}
+      pathPointType: 0
+    - position: {x: 26.685722, y: 0, z: 2.6922154}
+      pathPointType: 0
+    - position: {x: 26.920952, y: 0, z: 3.2521214}
+      pathPointType: 0
+    - position: {x: 27.055107, y: 0, z: 3.7109535}
+      pathPointType: 0
+    - position: {x: 27.3224, y: 0, z: 4.302919}
+      pathPointType: 0
+    - position: {x: 27.575008, y: 0, z: 4.8802047}
+      pathPointType: 0
+    - position: {x: 27.76991, y: 0, z: 5.3997803}
+      pathPointType: 0
+    - position: {x: 28.019249, y: 0, z: 5.9737945}
+      pathPointType: 0
+    - position: {x: 28.32632, y: 0, z: 6.605542}
+      pathPointType: 0
+    - position: {x: 28.62459, y: 0, z: 7.228487}
+      pathPointType: 0
+    - position: {x: 28.214285, y: 0, z: 7.142857}
+      pathPointType: 0
+    - position: {x: 28.357578, y: 0, z: 7.8380985}
+      pathPointType: 0
+    - position: {x: 27.757017, y: 0, z: 7.789484}
+      pathPointType: 0
+    - position: {x: 26.888666, y: 0, z: 7.473082}
+      pathPointType: 0
+    - position: {x: 26.1516, y: 0, z: 7.287964}
+      pathPointType: 0
+    - position: {x: 25.568651, y: 0, z: 7.256963}
+      pathPointType: 0
+    - position: {x: 25.249575, y: 0, z: 7.489834}
+      pathPointType: 0
+    - position: {x: 24.902014, y: 0, z: 7.694222}
+      pathPointType: 0
+    - position: {x: 24.385643, y: 0, z: 7.7297974}
+      pathPointType: 0
+    - position: {x: 23.773514, y: 0, z: 7.669616}
+      pathPointType: 0
+    - position: {x: 23.073856, y: 0, z: 7.521908}
+      pathPointType: 0
+    - position: {x: 21.785715, y: 0, z: 6.785714}
+      pathPointType: 0
+    - position: {x: 21.456863, y: 0, z: 5.5286207}
+      pathPointType: 0
+    - position: {x: 21.38596, y: 0, z: 4.5294747}
+      pathPointType: 0
+    - position: {x: 21.46399, y: 0, z: 3.67926}
+      pathPointType: 0
+    - position: {x: 20.450756, y: 0, z: 1.7377851}
+      pathPointType: 0
+    - position: {x: 20.269526, y: 0, z: 0.6283118}
+      pathPointType: 0
+    - position: {x: 19.47805, y: 0, z: -1.0914048}
+      pathPointType: 0
+    - position: {x: 19.152292, y: 0, z: -2.3454049}
+      pathPointType: 0
+    - position: {x: 19.059097, y: 0, z: -3.366842}
+      pathPointType: 0
+    - position: {x: 18.79523, y: 0, z: -4.558953}
+      pathPointType: 0
+    - position: {x: 17.853907, y: 0, z: -6.4285173}
+      pathPointType: 0
+    - position: {x: 17.214666, y: 0, z: -7.9960003}
+      pathPointType: 0
+    - position: {x: 17.294535, y: 0, z: -7.0037484}
+      pathPointType: 0
+    - position: {x: 17.060778, y: 0, z: -6.325123}
+      pathPointType: 0
+    - position: {x: 16.544731, y: 0, z: -5.928786}
+      pathPointType: 0
+    - position: {x: 15.858277, y: 0, z: -5.702856}
+      pathPointType: 0
+    - position: {x: 15.357896, y: 0, z: -5.2908545}
+      pathPointType: 0
+    - position: {x: 15.046704, y: 0, z: -4.6896625}
+      pathPointType: 0
+    - position: {x: 14.543593, y: 0, z: -4.280391}
+      pathPointType: 0
+    - position: {x: 13.888309, y: 0, z: -4.0232916}
+      pathPointType: 0
+    - position: {x: 13.4711, y: 0, z: -3.5281172}
+      pathPointType: 0
+    - position: {x: 13.053436, y: 0, z: -3.0333972}
+      pathPointType: 0
+    - position: {x: 12.07351, y: 0, z: -3.100941}
+      pathPointType: 0
+    - position: {x: 11.873103, y: 0, z: -3.2891288}
+      pathPointType: 0
+    - position: {x: 11.494734, y: 0, z: -3.6552792}
+      pathPointType: 0
+    - position: {x: 11.2697525, y: 0, z: -3.8680415}
+      pathPointType: 0
+    - position: {x: 10.707921, y: 0, z: -4.4176536}
+      pathPointType: 0
+    - position: {x: 10.014065, y: 0, z: -5.099291}
+      pathPointType: 0
+    - position: {x: 9.530797, y: 0, z: -5.5703397}
+      pathPointType: 0
+    - position: {x: 9.069372, y: 0, z: -6.0195465}
+      pathPointType: 0
+    - position: {x: 8.300778, y: 0, z: -6.775921}
+      pathPointType: 0
+    - position: {x: 7.531457, y: 0, z: -7.5330234}
+      pathPointType: 0
+    - position: {x: 7.153936, y: 0, z: -7.898325}
+      pathPointType: 0
+    - position: {x: 6.1926355, y: 0, z: -8.847406}
       pathPointType: 2
-    - position: {x: 92.3829, y: 0, z: -5.3777075}
+    - position: {x: 7.332282, y: 0, z: -7.628349}
       pathPointType: 0
-    - position: {x: 93.109245, y: 0, z: -4.6937413}
+    - position: {x: 8.533731, y: 0, z: -6.3474894}
       pathPointType: 0
-    - position: {x: 93.59068, y: 0, z: -4.254691}
+    - position: {x: 9.436829, y: 0, z: -5.3649807}
       pathPointType: 0
-    - position: {x: 93.92485, y: 0, z: -3.9629102}
+    - position: {x: 10.398084, y: 0, z: -4.324314}
       pathPointType: 0
-    - position: {x: 94.60384, y: 0, z: -3.3263}
+    - position: {x: 11.117424, y: 0, z: -3.525563}
       pathPointType: 0
-    - position: {x: 95.2521, y: 0, z: -2.7204294}
+    - position: {x: 11.618531, y: 0, z: -2.9450445}
       pathPointType: 0
-    - position: {x: 95.87771, y: 0, z: -2.1372006}
+    - position: {x: 12.628197, y: 0, z: -1.8559678}
       pathPointType: 0
-    - position: {x: 96.337425, y: 0, z: -1.7198749}
+    - position: {x: 13.71583, y: 0, z: -0.6889243}
       pathPointType: 0
-    - position: {x: 96.737854, y: 0, z: -1.3618335}
+    - position: {x: 14.449784, y: 0, z: 0.12444067}
       pathPointType: 0
-    - position: {x: 97.27477, y: 0, z: -0.86729544}
+    - position: {x: 15.703026, y: 0, z: 1.4570934}
       pathPointType: 0
-    - position: {x: 97.44499, y: 0, z: -0.73946416}
+    - position: {x: 15.699163, y: 0, z: 1.532642}
       pathPointType: 1
     pathWidth: 1
   - pathRoute:
-    - position: {x: 7.1618176, y: 0, z: 7.6681824}
+    - position: {x: 38.824547, y: 0, z: -3.5200005}
       pathPointType: 2
-    - position: {x: 8.0014515, y: 0, z: 7.828424}
+    - position: {x: 39.05854, y: 0, z: -3.1036408}
       pathPointType: 0
-    - position: {x: 8.652581, y: 0, z: 7.800162}
+    - position: {x: 38.60988, y: 0, z: -3.369936}
       pathPointType: 0
-    - position: {x: 9.215073, y: 0, z: 7.683261}
+    - position: {x: 38.179737, y: 0, z: -3.61771}
       pathPointType: 0
-    - position: {x: 9.554198, y: 0, z: 7.3429947}
+    - position: {x: 37.687416, y: 0, z: -3.9276679}
       pathPointType: 0
-    - position: {x: 9.808841, y: 0, z: 6.9182453}
+    - position: {x: 37.186115, y: 0, z: -4.246602}
       pathPointType: 0
-    - position: {x: 10.196197, y: 0, z: 6.6262097}
+    - position: {x: 36.76392, y: 0, z: -4.4864306}
       pathPointType: 0
-    - position: {x: 10.710635, y: 0, z: 6.4612565}
+    - position: {x: 36.419365, y: 0, z: -4.6486187}
       pathPointType: 0
-    - position: {x: 11.238452, y: 0, z: 6.309681}
+    - position: {x: 36.07275, y: 0, z: -4.81287}
       pathPointType: 0
-    - position: {x: 11.752131, y: 0, z: 6.1439686}
+    - position: {x: 35.73439, y: 0, z: -4.96886}
       pathPointType: 0
-    - position: {x: 12.194361, y: 0, z: 5.9068055}
+    - position: {x: 35.48167, y: 0, z: -5.039217}
       pathPointType: 0
-    - position: {x: 12.004177, y: 0, z: 5.03723}
+    - position: {x: 34.858936, y: 0, z: -5.4795837}
       pathPointType: 0
-    - position: {x: 12.277361, y: 0, z: 6.3295903}
+    - position: {x: 35.73724, y: 0, z: -5.011264}
       pathPointType: 0
-    - position: {x: 11.716457, y: 0, z: 6.787863}
+    - position: {x: 36.42557, y: 0, z: -4.7329197}
       pathPointType: 0
-    - position: {x: 11.418359, y: 0, z: 7.508939}
+    - position: {x: 37.17837, y: 0, z: -4.3901033}
       pathPointType: 0
-    - position: {x: 11.454032, y: 0, z: 8.563788}
+    - position: {x: 38.15543, y: 0, z: -3.823027}
       pathPointType: 0
-    - position: {x: 11.262483, y: 0, z: 9.391416}
+    - position: {x: 39.04814, y: 0, z: -3.340301}
       pathPointType: 0
-    - position: {x: 10.973382, y: 0, z: 10.121491}
+    - position: {x: 40.008343, y: 0, z: -2.790083}
       pathPointType: 0
-    - position: {x: 10.8308735, y: 0, z: 10.998158}
+    - position: {x: 40.725243, y: 0, z: -2.4831684}
       pathPointType: 0
-    - position: {x: 10.547417, y: 0, z: 11.733878}
+    - position: {x: 41.295956, y: 0, z: -2.3224409}
       pathPointType: 0
-    - position: {x: 10.2244625, y: 0, z: 12.4300995}
+    - position: {x: 41.713577, y: 0, z: -2.3148046}
       pathPointType: 0
-    - position: {x: 10.02549, y: 0, z: 13.250303}
+    - position: {x: 42.47982, y: 0, z: -1.9585459}
       pathPointType: 0
-    - position: {x: 9.151677, y: 0, z: 13.395666}
+    - position: {x: 42.860523, y: 0, z: -1.9878265}
       pathPointType: 0
-    - position: {x: 8.738159, y: 0, z: 12.991699}
+    - position: {x: 41.882713, y: 0, z: -1.9855489}
       pathPointType: 0
-    - position: {x: 8.254298, y: 0, z: 12.517389}
+    - position: {x: 40.91727, y: 0, z: -1.970905}
       pathPointType: 0
-    - position: {x: 7.485157, y: 0, z: 11.757799}
+    - position: {x: 39.521812, y: 0, z: -2.3862774}
       pathPointType: 0
-    - position: {x: 6.542717, y: 0, z: 10.824911}
+    - position: {x: 38.018703, y: 0, z: -2.9092946}
       pathPointType: 0
-    - position: {x: 6.0686493, y: 0, z: 10.360394}
+    - position: {x: 36.646866, y: 0, z: -3.301046}
       pathPointType: 0
-    - position: {x: 5.250141, y: 0, z: 9.551436}
+    - position: {x: 35.572784, y: 0, z: -3.3950431}
       pathPointType: 0
-    - position: {x: 4.420051, y: 0, z: 8.730898}
+    - position: {x: 33.6654, y: 0, z: -4.3223386}
       pathPointType: 0
-    - position: {x: 3.64529, y: 0, z: 7.9656878}
+    - position: {x: 32.57723, y: 0, z: -4.430424}
       pathPointType: 0
-    - position: {x: 2.667526, y: 0, z: 6.9974747}
+    - position: {x: 31.58101, y: 0, z: -4.446556}
       pathPointType: 0
-    - position: {x: 2.120535, y: 0, z: 6.4600353}
+    - position: {x: 29.906754, y: 0, z: -5.1407237}
       pathPointType: 0
-    - position: {x: 0.9323128, y: 0, z: 5.281364}
+    - position: {x: 28.14498, y: 0, z: -5.922412}
       pathPointType: 0
-    - position: {x: 3.3688128, y: 0, z: 5.69357}
+    - position: {x: 28.401497, y: 0, z: -5.9154263}
       pathPointType: 0
-    - position: {x: 4.8232913, y: 0, z: 5.1237545}
+    - position: {x: 27.76069, y: 0, z: -6.805765}
       pathPointType: 0
-    - position: {x: 7.1825247, y: 0, z: 5.458694}
+    - position: {x: 27.209263, y: 0, z: -7.606724}
       pathPointType: 0
-    - position: {x: 8.814722, y: 0, z: 5.066597}
+    - position: {x: 26.878746, y: 0, z: -8.186773}
       pathPointType: 0
-    - position: {x: 10.684472, y: 0, z: 4.9120536}
+    - position: {x: 26.29819, y: 0, z: -9.016863}
       pathPointType: 0
-    - position: {x: 12.342727, y: 0, z: 4.546014}
+    - position: {x: 25.749563, y: 0, z: -9.8150215}
       pathPointType: 0
-    - position: {x: 14.124714, y: 0, z: 4.303708}
+    - position: {x: 25.172098, y: 0, z: -10.64202}
       pathPointType: 0
-    - position: {x: 16.007742, y: 0, z: 4.1624403}
+    - position: {x: 24.49389, y: 0, z: -11.569757}
       pathPointType: 0
-    - position: {x: 17.68696, y: 0, z: 3.8173666}
+    - position: {x: 23.796577, y: 0, z: -12.5166025}
       pathPointType: 0
-    - position: {x: 19.859392, y: 0, z: 3.965504}
+    - position: {x: 23.622179, y: 0, z: -12.940535}
       pathPointType: 0
-    - position: {x: 21.052727, y: 0, z: 3.1345453}
-      pathPointType: 0
-    - position: {x: 21.488464, y: 0, z: 4.044547}
-      pathPointType: 0
-    - position: {x: 20.979147, y: 0, z: 4.009489}
-      pathPointType: 0
-    - position: {x: 20.488352, y: 0, z: 3.9929576}
-      pathPointType: 0
-    - position: {x: 19.973078, y: 0, z: 3.9519472}
-      pathPointType: 0
-    - position: {x: 19.422369, y: 0, z: 3.875501}
-      pathPointType: 0
-    - position: {x: 18.85845, y: 0, z: 3.7858443}
-      pathPointType: 0
-    - position: {x: 18.318102, y: 0, z: 3.7197576}
-      pathPointType: 0
-    - position: {x: 17.836296, y: 0, z: 3.712216}
-      pathPointType: 0
-    - position: {x: 17.533913, y: 0, z: 3.884095}
-      pathPointType: 0
-    - position: {x: 17.296238, y: 0, z: 4.120682}
-      pathPointType: 0
-    - position: {x: 16.280327, y: 0, z: 3.5790339}
-      pathPointType: 0
-    - position: {x: 17.575592, y: 0, z: 4.232679}
-      pathPointType: 0
-    - position: {x: 18.599573, y: 0, z: 4.6150393}
-      pathPointType: 0
-    - position: {x: 19.61179, y: 0, z: 4.98564}
-      pathPointType: 0
-    - position: {x: 20.092411, y: 0, z: 4.8246403}
-      pathPointType: 0
-    - position: {x: 20.866293, y: 0, z: 4.956902}
-      pathPointType: 0
-    - position: {x: 21.74111, y: 0, z: 5.1901}
-      pathPointType: 0
-    - position: {x: 22.89949, y: 0, z: 5.7068605}
-      pathPointType: 0
-    - position: {x: 23.837915, y: 0, z: 6.003665}
-      pathPointType: 0
-    - position: {x: 24.768297, y: 0, z: 6.2924294}
-      pathPointType: 0
-    - position: {x: 25.557386, y: 0, z: 6.4398994}
-      pathPointType: 0
-    - position: {x: 26.160954, y: 0, z: 6.401846}
-      pathPointType: 0
-    - position: {x: 26.071747, y: 0, z: 6.1786637}
-      pathPointType: 0
-    - position: {x: 25.562597, y: 0, z: 5.5355377}
-      pathPointType: 0
-    - position: {x: 25.149694, y: 0, z: 4.98866}
-      pathPointType: 0
-    - position: {x: 24.866919, y: 0, z: 4.57191}
-      pathPointType: 0
-    - position: {x: 24.392584, y: 0, z: 3.9636014}
-      pathPointType: 0
-    - position: {x: 23.884138, y: 0, z: 3.321179}
-      pathPointType: 0
-    - position: {x: 23.41047, y: 0, z: 2.7135348}
-      pathPointType: 0
-    - position: {x: 22.789669, y: 0, z: 1.95876}
-      pathPointType: 0
-    - position: {x: 22.47303, y: 0, z: 1.5081455}
-      pathPointType: 0
-    - position: {x: 21.979046, y: 0, z: 0.8801848}
-      pathPointType: 0
-    - position: {x: 21.108397, y: 0, z: -0.12443851}
-      pathPointType: 0
-    - position: {x: 21.36473, y: 0, z: -0.27625513}
-      pathPointType: 0
-    - position: {x: 21.494068, y: 0, z: -0.55506873}
-      pathPointType: 0
-    - position: {x: 21.661205, y: 0, z: -0.79608256}
-      pathPointType: 0
-    - position: {x: 21.830145, y: 0, z: -1.0352962}
-      pathPointType: 0
-    - position: {x: 21.9753, y: 0, z: -1.2982907}
-      pathPointType: 0
-    - position: {x: 22.113678, y: 0, z: -1.5680654}
-      pathPointType: 0
-    - position: {x: 22.13076, y: 0, z: -1.9591331}
-      pathPointType: 0
-    - position: {x: 21.95686, y: 0, z: -2.5411859}
-      pathPointType: 0
-    - position: {x: 21.72891, y: 0, z: -3.1772852}
-      pathPointType: 0
-    - position: {x: 21.582584, y: 0, z: -3.7317646}
-      pathPointType: 0
-    - position: {x: 21.175, y: 0, z: -4.5474997}
-      pathPointType: 0
-    - position: {x: 21.08022, y: 0, z: -4.5709662}
-      pathPointType: 0
-    - position: {x: 20.804352, y: 0, z: -4.7755213}
-      pathPointType: 0
-    - position: {x: 20.576357, y: 0, z: -4.932203}
-      pathPointType: 0
-    - position: {x: 20.384628, y: 0, z: -5.0526175}
-      pathPointType: 0
-    - position: {x: 20.207539, y: 0, z: -5.158395}
-      pathPointType: 0
-    - position: {x: 20.04787, y: 0, z: -5.246749}
-      pathPointType: 0
-    - position: {x: 19.902985, y: 0, z: -5.3203235}
-      pathPointType: 0
-    - position: {x: 19.738297, y: 0, z: -5.413697}
-      pathPointType: 0
-    - position: {x: 19.531792, y: 0, z: -5.5488896}
-      pathPointType: 0
-    - position: {x: 19.273779, y: 0, z: -5.735588}
-      pathPointType: 0
-    - position: {x: 18.597221, y: 0, z: -6.3408337}
-      pathPointType: 0
-    - position: {x: 17.64027, y: 0, z: -5.510505}
-      pathPointType: 0
-    - position: {x: 16.062687, y: 0, z: -5.3008113}
-      pathPointType: 0
-    - position: {x: 14.979966, y: 0, z: -4.596256}
-      pathPointType: 0
-    - position: {x: 13.530759, y: 0, z: -4.2581854}
-      pathPointType: 0
-    - position: {x: 11.930486, y: 0, z: -4.0711803}
-      pathPointType: 0
-    - position: {x: 10.589955, y: 0, z: -3.6244328}
-      pathPointType: 0
-    - position: {x: 8.943263, y: 0, z: -3.4838479}
-      pathPointType: 0
-    - position: {x: 7.706023, y: 0, z: -2.9338098}
-      pathPointType: 0
-    - position: {x: 6.1729255, y: 0, z: -2.6796298}
-      pathPointType: 0
-    - position: {x: 4.7146044, y: 0, z: -2.350673}
-      pathPointType: 0
-    - position: {x: 2.927, y: 0, z: -2.3509998}
-      pathPointType: 0
-    - position: {x: 3.1435308, y: 0, z: -1.489541}
-      pathPointType: 0
-    - position: {x: 2.5149622, y: 0, z: -1.4731817}
-      pathPointType: 0
-    - position: {x: 1.8975465, y: 0, z: -1.4456692}
-      pathPointType: 0
-    - position: {x: 1.4476597, y: 0, z: -1.250628}
-      pathPointType: 0
-    - position: {x: 1.0978688, y: 0, z: -0.95549095}
-      pathPointType: 0
-    - position: {x: 0.6766, y: 0, z: -0.73183167}
-      pathPointType: 0
-    - position: {x: 0.22818933, y: 0, z: -0.5353145}
-      pathPointType: 0
-    - position: {x: -0.1046457, y: 0, z: -0.22322127}
-      pathPointType: 0
-    - position: {x: -0.5855992, y: 0, z: -0.059246957}
-      pathPointType: 0
-    - position: {x: -1.0817342, y: 0, z: 0.08954629}
-      pathPointType: 0
-    - position: {x: -1.8762916, y: 0, z: -0.06008329}
-      pathPointType: 0
-    - position: {x: -1.3238733, y: 0, z: -0.11285424}
-      pathPointType: 0
-    - position: {x: -1.2090354, y: 0, z: -0.6032059}
-      pathPointType: 0
-    - position: {x: -1.0039867, y: 0, z: -1.0033466}
-      pathPointType: 0
-    - position: {x: -0.6671721, y: 0, z: -1.2717214}
-      pathPointType: 0
-    - position: {x: -0.26579404, y: 0, z: -1.4755328}
-      pathPointType: 0
-    - position: {x: 0.1281184, y: 0, z: -1.6868097}
-      pathPointType: 0
-    - position: {x: 0.4695159, y: 0, z: -1.9506015}
-      pathPointType: 0
-    - position: {x: 0.66333306, y: 0, z: -2.3619738}
-      pathPointType: 0
-    - position: {x: 0.7289642, y: 0, z: -2.901532}
-      pathPointType: 0
-    - position: {x: 0.7693485, y: 0, z: -3.4663372}
-      pathPointType: 0
-    - position: {x: 0.5157916, y: 0, z: -4.3250833}
-      pathPointType: 0
-    - position: {x: 1.5074717, y: 0, z: -4.0591416}
-      pathPointType: 0
-    - position: {x: 2.4374247, y: 0, z: -3.8549278}
-      pathPointType: 0
-    - position: {x: 3.4116943, y: 0, z: -3.606397}
-      pathPointType: 0
-    - position: {x: 4.0173616, y: 0, z: -3.7264678}
-      pathPointType: 0
-    - position: {x: 4.4508114, y: 0, z: -4.0187573}
-      pathPointType: 0
-    - position: {x: 4.9874167, y: 0, z: -4.2078905}
-      pathPointType: 0
-    - position: {x: 5.984835, y: 0, z: -3.9362106}
-      pathPointType: 0
-    - position: {x: 6.9859014, y: 0, z: -3.6608834}
-      pathPointType: 0
-    - position: {x: 7.755818, y: 0, z: -3.6167054}
-      pathPointType: 0
-    - position: {x: 8.320046, y: 0, z: -3.7782164}
-      pathPointType: 0
-    - position: {x: 8.484126, y: 0, z: -4.3398747}
-      pathPointType: 0
-    - position: {x: 8.62343, y: 0, z: -3.551285}
-      pathPointType: 0
-    - position: {x: 8.210588, y: 0, z: -3.314842}
-      pathPointType: 0
-    - position: {x: 7.938419, y: 0, z: -2.9377263}
-      pathPointType: 0
-    - position: {x: 7.7655244, y: 0, z: -2.4613357}
-      pathPointType: 0
-    - position: {x: 7.513265, y: 0, z: -2.0643096}
-      pathPointType: 0
-    - position: {x: 7.1226587, y: 0, z: -1.8056307}
-      pathPointType: 0
-    - position: {x: 6.6743336, y: 0, z: -1.6046708}
-      pathPointType: 0
-    - position: {x: 6.2415695, y: 0, z: -1.3881493}
-      pathPointType: 0
-    - position: {x: 5.9072056, y: 0, z: -1.0732282}
-      pathPointType: 0
-    - position: {x: 5.64706, y: 0, z: -0.6840887}
-      pathPointType: 0
-    - position: {x: 4.8474545, y: 0, z: -0.834409}
+    - position: {x: 22.497187, y: 0, z: -14.315059}
       pathPointType: 2
-    - position: {x: 6.0343304, y: 0, z: -0.021594226}
+    - position: {x: 23.968939, y: 0, z: -13.104212}
       pathPointType: 0
-    - position: {x: 6.5685472, y: 0, z: 0.13856101}
+    - position: {x: 24.561708, y: 0, z: -12.772347}
       pathPointType: 0
-    - position: {x: 6.95487, y: 0, z: 0.1508231}
+    - position: {x: 25.785713, y: 0, z: -11.809249}
       pathPointType: 0
-    - position: {x: 7.5025673, y: 0, z: 0.32445857}
+    - position: {x: 26.937626, y: 0, z: -10.9182415}
       pathPointType: 0
-    - position: {x: 8.268784, y: 0, z: 0.71661395}
+    - position: {x: 28.128138, y: 0, z: -9.988635}
       pathPointType: 0
-    - position: {x: 8.865771, y: 0, z: 0.9395406}
+    - position: {x: 28.801619, y: 0, z: -9.576063}
       pathPointType: 0
-    - position: {x: 9.306114, y: 0, z: 1.005823}
+    - position: {x: 29.73081, y: 0, z: -8.907776}
       pathPointType: 0
-    - position: {x: 9.962435, y: 0, z: 1.2880814}
+    - position: {x: 31.050629, y: 0, z: -7.8488646}
       pathPointType: 0
-    - position: {x: 10.722877, y: 0, z: 1.6744618}
+    - position: {x: 32.03992, y: 0, z: -7.1204786}
       pathPointType: 0
-    - position: {x: 11.405108, y: 0, z: 1.9826334}
+    - position: {x: 32.522198, y: 0, z: -6.899105}
       pathPointType: 0
-    - position: {x: 11.234846, y: 0, z: 1.4383094}
+    - position: {x: 33.437233, y: 0, z: -6.244976}
       pathPointType: 1
     pathWidth: 1
   - pathRoute:
-    - position: {x: -66.615, y: 0, z: -21.815}
-      pathPointType: 2
-    - position: {x: -67.16826, y: 0, z: -22.09144}
-      pathPointType: 0
-    - position: {x: -67.98126, y: 0, z: -22.627632}
-      pathPointType: 0
-    - position: {x: -69.09374, y: 0, z: -23.463284}
-      pathPointType: 0
-    - position: {x: -69.57749, y: 0, z: -23.670221}
-      pathPointType: 0
-    - position: {x: -70.443, y: 0, z: -24.25891}
-      pathPointType: 0
-    - position: {x: -71.51328, y: 0, z: -25.052378}
-      pathPointType: 0
-    - position: {x: -72.43415, y: 0, z: -25.696426}
-      pathPointType: 0
-    - position: {x: -73.266884, y: 0, z: -26.252344}
-      pathPointType: 0
-    - position: {x: -74.030716, y: 0, z: -26.739355}
-      pathPointType: 0
-    - position: {x: -75.02673, y: 0, z: -27.45856}
-      pathPointType: 0
-    - position: {x: -76.531425, y: 0, z: -28.68643}
-      pathPointType: 0
-    - position: {x: -73.81339, y: 0, z: -28.555605}
-      pathPointType: 0
-    - position: {x: -71.40969, y: 0, z: -28.73911}
-      pathPointType: 0
-    - position: {x: -68.82327, y: 0, z: -28.739895}
-      pathPointType: 0
-    - position: {x: -66.48298, y: 0, z: -28.986816}
-      pathPointType: 0
-    - position: {x: -63.964344, y: 0, z: -29.055387}
-      pathPointType: 0
-    - position: {x: -61.256123, y: 0, z: -28.934372}
-      pathPointType: 0
-    - position: {x: -58.756474, y: 0, z: -29.02193}
-      pathPointType: 0
-    - position: {x: -56.268982, y: 0, z: -29.121647}
-      pathPointType: 0
-    - position: {x: -54.279472, y: 0, z: -29.719343}
-      pathPointType: 0
-    - position: {x: -51.636288, y: 0, z: -29.66337}
-      pathPointType: 0
-    - position: {x: -49.63071, y: 0, z: -30.244999}
-      pathPointType: 0
-    - position: {x: -50.989876, y: 0, z: -27.740852}
-      pathPointType: 0
-    - position: {x: -52.801437, y: 0, z: -25.689098}
-      pathPointType: 0
-    - position: {x: -54.88846, y: 0, z: -23.912807}
-      pathPointType: 0
-    - position: {x: -56.56993, y: 0, z: -21.730972}
-      pathPointType: 0
-    - position: {x: -59.244293, y: 0, z: -20.54202}
-      pathPointType: 0
-    - position: {x: -60.446804, y: 0, z: -17.881218}
-      pathPointType: 0
-    - position: {x: -62.992966, y: 0, z: -16.564068}
-      pathPointType: 0
-    - position: {x: -64.58515, y: 0, z: -14.29294}
-      pathPointType: 0
-    - position: {x: -66.62041, y: 0, z: -12.46489}
-      pathPointType: 0
-    - position: {x: -68.65321, y: 0, z: -10.634373}
-      pathPointType: 0
-    - position: {x: -71.07643, y: 0, z: -9.194285}
-      pathPointType: 2
-    - position: {x: -70.13428, y: 0, z: -9.925213}
-      pathPointType: 0
-    - position: {x: -69.587166, y: 0, z: -11.051187}
-      pathPointType: 0
-    - position: {x: -69.26618, y: 0, z: -12.403288}
-      pathPointType: 0
-    - position: {x: -68.88252, y: 0, z: -13.692709}
-      pathPointType: 0
-    - position: {x: -68.274345, y: 0, z: -14.757617}
-      pathPointType: 0
-    - position: {x: -67.79587, y: 0, z: -15.9522295}
-      pathPointType: 0
-    - position: {x: -67.41188, y: 0, z: -17.241331}
-      pathPointType: 0
-    - position: {x: -66.47458, y: 0, z: -17.977116}
-      pathPointType: 0
-    - position: {x: -66.08416, y: 0, z: -19.259775}
-      pathPointType: 0
-    - position: {x: -66.07519, y: 0, z: -20.923885}
-      pathPointType: 0
-    - position: {x: -65.963394, y: 0, z: -22.485178}
+    - position: {x: 15.699163, y: 0, z: 1.532642}
       pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 13.150001, y: 0, z: -66.355}
-      pathPointType: 2
-    - position: {x: 13.593899, y: 0, z: -66.73983}
-      pathPointType: 0
-    - position: {x: 13.614753, y: 0, z: -67.5477}
-      pathPointType: 0
-    - position: {x: 13.319571, y: 0, z: -68.671616}
-      pathPointType: 0
-    - position: {x: 12.790205, y: 0, z: -70.02971}
-      pathPointType: 0
-    - position: {x: 12.705229, y: 0, z: -70.94341}
-      pathPointType: 0
-    - position: {x: 12.244864, y: 0, z: -72.2325}
-      pathPointType: 0
-    - position: {x: 12.252263, y: 0, z: -73.053825}
-      pathPointType: 0
-    - position: {x: 12.241519, y: 0, z: -73.893295}
-      pathPointType: 0
-    - position: {x: 11.9713125, y: 0, z: -74.99223}
-      pathPointType: 0
-    - position: {x: 11.541342, y: 0, z: -76.25093}
-      pathPointType: 0
-    - position: {x: 10.925, y: 0, z: -77.696}
-      pathPointType: 0
-    - position: {x: 11.830476, y: 0, z: -74.861916}
-      pathPointType: 0
-    - position: {x: 11.945019, y: 0, z: -72.81878}
-      pathPointType: 0
-    - position: {x: 12.085332, y: 0, z: -70.74986}
-      pathPointType: 0
-    - position: {x: 12.587966, y: 0, z: -68.31863}
-      pathPointType: 0
-    - position: {x: 12.380672, y: 0, z: -66.59731}
-      pathPointType: 0
-    - position: {x: 12.559966, y: 0, z: -64.489426}
-      pathPointType: 0
-    - position: {x: 13.172514, y: 0, z: -61.948277}
-      pathPointType: 0
-    - position: {x: 13.414709, y: 0, z: -59.77748}
-      pathPointType: 0
-    - position: {x: 13.564051, y: 0, z: -57.69954}
-      pathPointType: 0
-    - position: {x: 13.756023, y: 0, z: -55.578964}
-      pathPointType: 0
-    - position: {x: 13.447223, y: 0, z: -53.959164}
-      pathPointType: 2
-    - position: {x: 13.673502, y: 0, z: -54.742374}
-      pathPointType: 0
-    - position: {x: 13.829012, y: 0, z: -55.596355}
-      pathPointType: 0
-    - position: {x: 13.927195, y: 0, z: -56.507668}
-      pathPointType: 0
-    - position: {x: 13.62723, y: 0, z: -57.817123}
-      pathPointType: 0
-    - position: {x: 13.30428, y: 0, z: -59.149567}
-      pathPointType: 0
-    - position: {x: 13.5500965, y: 0, z: -59.913242}
-      pathPointType: 0
-    - position: {x: 13.340932, y: 0, z: -61.131897}
-      pathPointType: 0
-    - position: {x: 13.437194, y: 0, z: -62.045128}
-      pathPointType: 0
-    - position: {x: 13.207493, y: 0, z: -63.28432}
-      pathPointType: 0
-    - position: {x: 12.840237, y: 0, z: -64.661064}
-      pathPointType: 0
-    - position: {x: 12.507408, y: 0, z: -66.00339}
+    - position: {x: 17.986174, y: 0, z: 1.5000427}
       pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 25.647501, y: 0, z: -2.3847497}
-      pathPointType: 2
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 51.322502, y: 0, z: 34.3275}
-      pathPointType: 2
-    - position: {x: 51.581272, y: 0, z: 35.11657}
-      pathPointType: 0
-    - position: {x: 51.899204, y: 0, z: 35.96481}
-      pathPointType: 0
-    - position: {x: 52.135487, y: 0, z: 36.73139}
-      pathPointType: 0
-    - position: {x: 52.49853, y: 0, z: 37.62474}
-      pathPointType: 0
-    - position: {x: 52.593975, y: 0, z: 38.250484}
-      pathPointType: 0
-    - position: {x: 52.512386, y: 0, z: 38.699203}
-      pathPointType: 0
-    - position: {x: 52.567577, y: 0, z: 39.284695}
-      pathPointType: 0
-    - position: {x: 52.807796, y: 0, z: 40.055218}
-      pathPointType: 0
-    - position: {x: 52.967976, y: 0, z: 40.745697}
-      pathPointType: 0
-    - position: {x: 53.288788, y: 0, z: 41.596817}
-      pathPointType: 0
-    - position: {x: 52.866253, y: 0, z: 41.704582}
-      pathPointType: 0
-    - position: {x: 54.373398, y: 0, z: 40.884075}
-      pathPointType: 0
-    - position: {x: 55.314785, y: 0, z: 39.49781}
-      pathPointType: 0
-    - position: {x: 56.710163, y: 0, z: 38.56554}
-      pathPointType: 0
-    - position: {x: 57.686893, y: 0, z: 37.21462}
-      pathPointType: 0
-    - position: {x: 58.93035, y: 0, z: 36.130424}
-      pathPointType: 0
-    - position: {x: 60.362362, y: 0, z: 35.234783}
-      pathPointType: 0
-    - position: {x: 60.864506, y: 0, z: 33.40928}
-      pathPointType: 0
-    - position: {x: 62.46388, y: 0, z: 32.681}
-      pathPointType: 0
-    - position: {x: 63.698174, y: 0, z: 31.587646}
-      pathPointType: 0
-    - position: {x: 64.698395, y: 0, z: 30.260208}
-      pathPointType: 0
-    - position: {x: 65.43708, y: 0, z: 28.67125}
-      pathPointType: 0
-    - position: {x: 64.5732, y: 0, z: 29.07441}
-      pathPointType: 0
-    - position: {x: 63.321682, y: 0, z: 29.089943}
-      pathPointType: 0
-    - position: {x: 61.61077, y: 0, z: 28.646074}
-      pathPointType: 0
-    - position: {x: 60.138668, y: 0, z: 28.441021}
-      pathPointType: 0
-    - position: {x: 58.72884, y: 0, z: 28.298235}
-      pathPointType: 0
-    - position: {x: 57.138042, y: 0, z: 27.974483}
-      pathPointType: 0
-    - position: {x: 56.079185, y: 0, z: 28.182673}
-      pathPointType: 0
-    - position: {x: 54.41778, y: 0, z: 27.788315}
-      pathPointType: 0
-    - position: {x: 53.01895, y: 0, z: 27.656528}
-      pathPointType: 0
-    - position: {x: 51.808228, y: 0, z: 27.712852}
-      pathPointType: 0
-    - position: {x: 49.778748, y: 0, z: 26.950417}
-      pathPointType: 0
-    - position: {x: 48.92834, y: 0, z: 28.311497}
-      pathPointType: 0
-    - position: {x: 47.742825, y: 0, z: 29.337463}
-      pathPointType: 0
-    - position: {x: 46.859814, y: 0, z: 30.665936}
-      pathPointType: 0
-    - position: {x: 45.71093, y: 0, z: 31.72854}
-      pathPointType: 0
-    - position: {x: 44.62898, y: 0, z: 32.858074}
-      pathPointType: 0
-    - position: {x: 43.224827, y: 0, z: 33.6654}
-      pathPointType: 0
-    - position: {x: 42.466022, y: 0, z: 35.118084}
-      pathPointType: 0
-    - position: {x: 41.121326, y: 0, z: 35.984875}
-      pathPointType: 0
-    - position: {x: 40.087948, y: 0, z: 37.162983}
-      pathPointType: 0
-    - position: {x: 38.99604, y: 0, z: 38.282555}
-      pathPointType: 0
-    - position: {x: 37.241997, y: 0, z: 38.739998}
-      pathPointType: 2
-    - position: {x: 39.181458, y: 0, z: 38.97504}
-      pathPointType: 0
-    - position: {x: 40.340046, y: 0, z: 38.42922}
-      pathPointType: 0
-    - position: {x: 41.187843, y: 0, z: 37.572598}
-      pathPointType: 0
-    - position: {x: 42.777954, y: 0, z: 37.458294}
-      pathPointType: 0
-    - position: {x: 44.29039, y: 0, z: 37.26631}
-      pathPointType: 0
-    - position: {x: 45.069344, y: 0, z: 36.340855}
-      pathPointType: 0
-    - position: {x: 46.81644, y: 0, z: 36.383533}
-      pathPointType: 0
-    - position: {x: 48.294193, y: 0, z: 36.15687}
-      pathPointType: 0
-    - position: {x: 49.531406, y: 0, z: 35.689667}
-      pathPointType: 0
-    - position: {x: 50.550335, y: 0, z: 35.004185}
-      pathPointType: 0
-    - position: {x: 51.329315, y: 0, z: 34.078747}
+    - position: {x: 19.566547, y: 0, z: 0.76081115}
       pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 97.44499, y: 0, z: -0.73946416}
+    - position: {x: 20.797485, y: 0, z: -0.32786036}
       pathPointType: 1
-    - position: {x: 90.211464, y: 0, z: 0.062273204}
+    - position: {x: 22.514145, y: 0, z: -0.9308084}
       pathPointType: 1
-    - position: {x: 82.11149, y: 0, z: -0.0024312735}
+    - position: {x: 24.29716, y: 0, z: -1.467402}
       pathPointType: 1
-    - position: {x: 74.4673, y: 0, z: 0.38863903}
+    - position: {x: 25.803104, y: 0, z: -2.2810655}
       pathPointType: 1
-    - position: {x: 66.61096, y: 0, z: 0.56756586}
+    - position: {x: 27.34657, y: 0, z: -3.0572078}
       pathPointType: 1
-    - position: {x: 58.796345, y: 0, z: 0.7882182}
+    - position: {x: 29.31576, y: 0, z: -3.4076273}
       pathPointType: 1
-    - position: {x: 51.041588, y: 0, z: 1.0687257}
+    - position: {x: 30.971073, y: 0, z: -4.071921}
       pathPointType: 1
-    - position: {x: 42.87641, y: 0, z: 0.93881166}
+    - position: {x: 32.392265, y: 0, z: -4.970337}
       pathPointType: 1
-    - position: {x: 34.98368, y: 0, z: 1.0813497}
-      pathPointType: 1
-    - position: {x: 27.29013, y: 0, z: 1.423063}
-      pathPointType: 1
-    - position: {x: 19.295427, y: 0, z: 1.4636279}
-      pathPointType: 1
-    - position: {x: 11.234846, y: 0, z: 1.4383094}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 97.44499, y: 0, z: -0.73946416}
-      pathPointType: 1
-    - position: {x: 83.21611, y: 0, z: -2.0899243}
-      pathPointType: 1
-    - position: {x: 68.033676, y: 0, z: -4.3939314}
-      pathPointType: 1
-    - position: {x: 53.277943, y: 0, z: -6.2712374}
-      pathPointType: 1
-    - position: {x: 38.493904, y: 0, z: -8.17685}
-      pathPointType: 1
-    - position: {x: 23.621407, y: 0, z: -10.170924}
-      pathPointType: 1
-    - position: {x: 8.651193, y: 0, z: -12.262713}
-      pathPointType: 1
-    - position: {x: -6.306896, y: 0, z: -14.342381}
-      pathPointType: 1
-    - position: {x: -21.106209, y: 0, z: -16.263264}
-      pathPointType: 1
-    - position: {x: -35.655052, y: 0, z: -17.933685}
-      pathPointType: 1
-    - position: {x: -50.851257, y: 0, z: -20.251465}
-      pathPointType: 1
-    - position: {x: -65.963394, y: 0, z: -22.485178}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 97.44499, y: 0, z: -0.73946416}
-      pathPointType: 1
-    - position: {x: 89.93182, y: 0, z: -6.4641175}
-      pathPointType: 1
-    - position: {x: 82.21801, y: 0, z: -12.389419}
-      pathPointType: 1
-    - position: {x: 74.65635, y: 0, z: -18.162569}
-      pathPointType: 1
-    - position: {x: 66.893845, y: 0, z: -24.136547}
-      pathPointType: 1
-    - position: {x: 59.338154, y: 0, z: -29.903727}
-      pathPointType: 1
-    - position: {x: 51.2253, y: 0, z: -36.22807}
-      pathPointType: 1
-    - position: {x: 43.763496, y: 0, z: -41.901356}
-      pathPointType: 1
-    - position: {x: 36.206543, y: 0, z: -47.669796}
-      pathPointType: 1
-    - position: {x: 28.39923, y: 0, z: -53.688595}
-      pathPointType: 1
-    - position: {x: 20.66283, y: 0, z: -59.63648}
-      pathPointType: 1
-    - position: {x: 12.507408, y: 0, z: -66.00339}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 97.44499, y: 0, z: -0.73946416}
-      pathPointType: 1
-    - position: {x: 91.29631, y: 0, z: -0.5106723}
-      pathPointType: 1
-    - position: {x: 85.113075, y: 0, z: -0.3164302}
-      pathPointType: 1
-    - position: {x: 78.38142, y: 0, z: -0.67062366}
-      pathPointType: 1
-    - position: {x: 72.10802, y: 0, z: -0.56655127}
-      pathPointType: 1
-    - position: {x: 65.49163, y: 0, z: -0.8054604}
-      pathPointType: 1
-    - position: {x: 58.572018, y: 0, z: -1.3475958}
-      pathPointType: 1
-    - position: {x: 52.283245, y: 0, z: -1.2588996}
-      pathPointType: 1
-    - position: {x: 45.616314, y: 0, z: -1.5483546}
-      pathPointType: 1
-    - position: {x: 39.15221, y: 0, z: -1.6349883}
-      pathPointType: 1
-    - position: {x: 32.593628, y: 0, z: -1.8160949}
-      pathPointType: 1
-    - position: {x: 25.647501, y: 0, z: -2.3847497}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 97.44499, y: 0, z: -0.73946416}
-      pathPointType: 1
-    - position: {x: 93.47172, y: 0, z: 2.6448913}
-      pathPointType: 1
-    - position: {x: 89.55875, y: 0, z: 6.0895395}
-      pathPointType: 1
-    - position: {x: 85.18726, y: 0, z: 9.075686}
-      pathPointType: 1
-    - position: {x: 81.40132, y: 0, z: 12.647375}
-      pathPointType: 1
-    - position: {x: 77.21789, y: 0, z: 15.821564}
-      pathPointType: 1
-    - position: {x: 72.85345, y: 0, z: 18.814749}
-      pathPointType: 1
-    - position: {x: 68.72466, y: 0, z: 22.043583}
-      pathPointType: 1
-    - position: {x: 64.543434, y: 0, z: 25.219986}
-      pathPointType: 1
-    - position: {x: 60.001556, y: 0, z: 28.035734}
-      pathPointType: 1
-    - position: {x: 55.633144, y: 0, z: 31.024954}
-      pathPointType: 1
-    - position: {x: 51.329315, y: 0, z: 34.078747}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 11.234846, y: 0, z: 1.4383094}
-      pathPointType: 1
-    - position: {x: 4.564983, y: 0, z: -0.3883944}
-      pathPointType: 1
-    - position: {x: -1.984316, y: 0, z: -2.0945334}
-      pathPointType: 1
-    - position: {x: -9.04689, y: 0, z: -4.3139496}
-      pathPointType: 1
-    - position: {x: -16.283232, y: 0, z: -6.7071304}
-      pathPointType: 1
-    - position: {x: -23.493446, y: 0, z: -9.074186}
-      pathPointType: 1
-    - position: {x: -30.561602, y: 0, z: -11.299183}
-      pathPointType: 1
-    - position: {x: -37.390377, y: 0, z: -13.284795}
-      pathPointType: 1
-    - position: {x: -44.441788, y: 0, z: -15.49305}
-      pathPointType: 1
-    - position: {x: -51.48113, y: 0, z: -17.689232}
-      pathPointType: 1
-    - position: {x: -58.608093, y: 0, z: -19.973036}
-      pathPointType: 1
-    - position: {x: -65.963394, y: 0, z: -22.485178}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 11.234846, y: 0, z: 1.4383094}
-      pathPointType: 1
-    - position: {x: 11.886291, y: 0, z: -4.1569967}
-      pathPointType: 1
-    - position: {x: 12.249206, y: 0, z: -10.0408325}
-      pathPointType: 1
-    - position: {x: 11.877146, y: 0, z: -16.659645}
-      pathPointType: 1
-    - position: {x: 12.189088, y: 0, z: -22.594452}
-      pathPointType: 1
-    - position: {x: 11.953963, y: 0, z: -29.076328}
-      pathPointType: 1
-    - position: {x: 12.284967, y: 0, z: -34.992077}
-      pathPointType: 1
-    - position: {x: 12.369485, y: 0, z: -41.15431}
-      pathPointType: 1
-    - position: {x: 12.749283, y: 0, z: -47.021263}
-      pathPointType: 1
-    - position: {x: 12.661957, y: 0, z: -53.355335}
-      pathPointType: 1
-    - position: {x: 12.9091625, y: 0, z: -59.354885}
-      pathPointType: 1
-    - position: {x: 12.507408, y: 0, z: -66.00339}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 11.234846, y: 0, z: 1.4383094}
-      pathPointType: 1
-    - position: {x: 13.2299385, y: 0, z: 1.7756091}
-      pathPointType: 1
-    - position: {x: 14.398421, y: 0, z: 1.2863009}
-      pathPointType: 1
-    - position: {x: 16.045536, y: 0, z: 1.2756236}
-      pathPointType: 1
-    - position: {x: 16.811611, y: 0, z: 0.38390663}
-      pathPointType: 1
-    - position: {x: 18.345585, y: 0, z: 0.26008755}
-      pathPointType: 1
-    - position: {x: 19.660734, y: 0, z: -0.08255595}
-      pathPointType: 1
-    - position: {x: 20.712637, y: 0, z: -0.6884452}
-      pathPointType: 1
-    - position: {x: 22.158468, y: 0, z: -0.900407}
-      pathPointType: 1
-    - position: {x: 23.509123, y: 0, z: -1.2075437}
-      pathPointType: 1
-    - position: {x: 24.68142, y: 0, z: -1.6930393}
-      pathPointType: 1
-    - position: {x: 25.647501, y: 0, z: -2.3847497}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 11.234846, y: 0, z: 1.4383094}
-      pathPointType: 1
-    - position: {x: 15.335004, y: 0, z: 4.8608284}
-      pathPointType: 1
-    - position: {x: 18.704996, y: 0, z: 7.5531816}
-      pathPointType: 1
-    - position: {x: 22.74386, y: 0, z: 10.914406}
-      pathPointType: 1
-    - position: {x: 26.081827, y: 0, z: 13.574734}
-      pathPointType: 1
-    - position: {x: 30.05578, y: 0, z: 16.871046}
-      pathPointType: 1
-    - position: {x: 33.792553, y: 0, z: 19.930183}
-      pathPointType: 1
-    - position: {x: 37.387913, y: 0, z: 22.847902}
-      pathPointType: 1
-    - position: {x: 40.92727, y: 0, z: 25.709616}
-      pathPointType: 1
-    - position: {x: 44.454113, y: 0, z: 28.558826}
-      pathPointType: 1
-    - position: {x: 48.03573, y: 0, z: 31.462801}
-      pathPointType: 1
-    - position: {x: 51.329315, y: 0, z: 34.078747}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: -65.963394, y: 0, z: -22.485178}
-      pathPointType: 1
-    - position: {x: -58.45983, y: 0, z: -26.071524}
-      pathPointType: 1
-    - position: {x: -51.151154, y: 0, z: -29.852757}
-      pathPointType: 1
-    - position: {x: -44.2459, y: 0, z: -34.037415}
-      pathPointType: 1
-    - position: {x: -37.14771, y: 0, z: -38.029137}
-      pathPointType: 1
-    - position: {x: -29.914978, y: 0, z: -41.88631}
-      pathPointType: 1
-    - position: {x: -22.50485, y: 0, z: -45.5661}
-      pathPointType: 1
-    - position: {x: -15.625873, y: 0, z: -49.777027}
-      pathPointType: 1
-    - position: {x: -8.295409, y: 0, z: -53.536476}
-      pathPointType: 1
-    - position: {x: -1.193441, y: 0, z: -57.524414}
-      pathPointType: 1
-    - position: {x: 5.74223, y: 0, z: -61.678658}
-      pathPointType: 1
-    - position: {x: 12.507408, y: 0, z: -66.00339}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: -65.963394, y: 0, z: -22.485178}
-      pathPointType: 1
-    - position: {x: -57.37754, y: 0, z: -20.400272}
-      pathPointType: 1
-    - position: {x: -48.99897, y: 0, z: -18.522657}
-      pathPointType: 1
-    - position: {x: -40.67665, y: 0, z: -16.70129}
-      pathPointType: 1
-    - position: {x: -32.1489, y: 0, z: -14.674489}
-      pathPointType: 1
-    - position: {x: -24.20804, y: 0, z: -13.234583}
-      pathPointType: 1
-    - position: {x: -15.336489, y: 0, z: -10.863983}
-      pathPointType: 1
-    - position: {x: -7.3189874, y: 0, z: -9.347431}
-      pathPointType: 1
-    - position: {x: 1.2557765, y: 0, z: -7.2736216}
-      pathPointType: 1
-    - position: {x: 9.626343, y: 0, z: -5.404005}
-      pathPointType: 1
-    - position: {x: 17.747425, y: 0, z: -3.7838774}
-      pathPointType: 1
-    - position: {x: 25.647501, y: 0, z: -2.3847497}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: -65.963394, y: 0, z: -22.485178}
-      pathPointType: 1
-    - position: {x: -54.709747, y: 0, z: -16.75233}
-      pathPointType: 1
-    - position: {x: -44.153587, y: 0, z: -11.716967}
-      pathPointType: 1
-    - position: {x: -33.33695, y: 0, z: -6.4211273}
-      pathPointType: 1
-    - position: {x: -22.751522, y: 0, z: -1.3565006}
-      pathPointType: 1
-    - position: {x: -12.244723, y: 0, z: 3.6294985}
-      pathPointType: 1
-    - position: {x: -1.5413489, y: 0, z: 8.812075}
-      pathPointType: 1
-    - position: {x: 9.211718, y: 0, z: 14.044344}
-      pathPointType: 1
-    - position: {x: 19.589981, y: 0, z: 18.901808}
-      pathPointType: 1
-    - position: {x: 30.399971, y: 0, z: 24.191002}
-      pathPointType: 1
-    - position: {x: 40.98448, y: 0, z: 29.254713}
-      pathPointType: 1
-    - position: {x: 51.329315, y: 0, z: 34.078747}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 12.507408, y: 0, z: -66.00339}
-      pathPointType: 1
-    - position: {x: 14.1511345, y: 0, z: -59.770702}
-      pathPointType: 1
-    - position: {x: 15.06207, y: 0, z: -54.27081}
-      pathPointType: 1
-    - position: {x: 16.847036, y: 0, z: -47.896885}
-      pathPointType: 1
-    - position: {x: 17.704111, y: 0, z: -42.450848}
-      pathPointType: 1
-    - position: {x: 18.64726, y: 0, z: -36.91874}
-      pathPointType: 1
-    - position: {x: 19.949486, y: 0, z: -31.027557}
-      pathPointType: 1
-    - position: {x: 20.978378, y: 0, z: -25.409708}
-      pathPointType: 1
-    - position: {x: 22.605608, y: 0, z: -19.193518}
-      pathPointType: 1
-    - position: {x: 23.899004, y: 0, z: -13.311163}
-      pathPointType: 1
-    - position: {x: 24.73234, y: 0, z: -7.8888683}
-      pathPointType: 1
-    - position: {x: 25.647501, y: 0, z: -2.3847497}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 12.507408, y: 0, z: -66.00339}
-      pathPointType: 1
-    - position: {x: 16.352207, y: 0, z: -56.589474}
-      pathPointType: 1
-    - position: {x: 19.872425, y: 0, z: -47.50015}
-      pathPointType: 1
-    - position: {x: 23.727419, y: 0, z: -38.076042}
-      pathPointType: 1
-    - position: {x: 27.26519, y: 0, z: -28.969158}
-      pathPointType: 1
-    - position: {x: 30.822653, y: 0, z: -19.842585}
-      pathPointType: 1
-    - position: {x: 34.321644, y: 0, z: -10.774483}
-      pathPointType: 1
-    - position: {x: 37.466442, y: 0, z: -2.0605738}
-      pathPointType: 1
-    - position: {x: 41.00113, y: 0, z: 7.0432277}
-      pathPointType: 1
-    - position: {x: 44.77435, y: 0, z: 16.385555}
-      pathPointType: 1
-    - position: {x: 48.06115, y: 0, z: 25.24147}
-      pathPointType: 1
-    - position: {x: 51.329315, y: 0, z: 34.078747}
-      pathPointType: 1
-    pathWidth: 1
-  - pathRoute:
-    - position: {x: 25.647501, y: 0, z: -2.3847497}
-      pathPointType: 1
-    - position: {x: 28.424404, y: 0, z: 1.3723066}
-      pathPointType: 1
-    - position: {x: 30.767073, y: 0, z: 4.695129}
-      pathPointType: 1
-    - position: {x: 32.833168, y: 0, z: 7.7413735}
-      pathPointType: 1
-    - position: {x: 35.6053, y: 0, z: 11.493662}
-      pathPointType: 1
-    - position: {x: 37.8701, y: 0, z: 14.738615}
-      pathPointType: 1
-    - position: {x: 40.23569, y: 0, z: 18.084356}
-      pathPointType: 1
-    - position: {x: 42.770565, y: 0, z: 21.599384}
-      pathPointType: 1
-    - position: {x: 44.93799, y: 0, z: 24.746962}
-      pathPointType: 1
-    - position: {x: 47.374878, y: 0, z: 28.164005}
-      pathPointType: 1
-    - position: {x: 49.679375, y: 0, z: 31.448652}
-      pathPointType: 1
-    - position: {x: 51.329315, y: 0, z: 34.078747}
+    - position: {x: 33.437233, y: 0, z: -6.244976}
       pathPointType: 1
     pathWidth: 1
   crossPathPoints:
-  - position: {x: 97.44499, y: 0, z: -0.73946416}
+  - position: {x: 15.699163, y: 0, z: 1.532642}
     connectedPathsIndexes: 
-  - position: {x: 11.234846, y: 0, z: 1.4383094}
-    connectedPathsIndexes: 
-  - position: {x: -65.963394, y: 0, z: -22.485178}
-    connectedPathsIndexes: 
-  - position: {x: 12.507408, y: 0, z: -66.00339}
-    connectedPathsIndexes: 
-  - position: {x: 25.647501, y: 0, z: -2.3847497}
-    connectedPathsIndexes: 
-  - position: {x: 51.329315, y: 0, z: 34.078747}
+  - position: {x: 33.437233, y: 0, z: -6.244976}
     connectedPathsIndexes: 
   maxClusterDistance: 20
   intermediatePointsPerSegment: 10
@@ -1630,7 +912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1317567821
 Transform:
   m_ObjectHideFlags: 0

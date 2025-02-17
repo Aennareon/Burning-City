@@ -61,17 +61,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\FarmFildData.cs" />
-    <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\WaterWorkZoneData.cs" />
-    <Compile Include="Assets\Scripts\HistorySystem\BaseHistoryEvent.cs" />
-    <Compile Include="Assets\Scripts\ZoneEditor\CityZonesManager.cs" />
-    <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\WoodlandWorkcamp.cs" />
-    <Compile Include="Assets\Scripts\PathSystem\DrawPath.cs" />
-    <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\MiningZoneData.cs" />
-    <Compile Include="Assets\Scripts\ZoneEditor\CityZonesData\ZoneData.cs" />
-    <Compile Include="Assets\Scripts\ZoneEditor\DrawZone.cs" />
-    <Compile Include="Assets\Scripts\HistorySystem\HistoryEventsData.cs" />
-    <Compile Include="Assets\Scripts\HistorySystem\RaceHistoryTimeline.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\BuildingDataManager.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\BuildingData.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\BuildingObject.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\BuildingPlacement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

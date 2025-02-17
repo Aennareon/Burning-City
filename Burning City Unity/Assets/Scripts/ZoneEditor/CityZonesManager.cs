@@ -45,7 +45,6 @@ public class CityZonesManager : ScriptableObject
         }
     }
 
-
     public static List<T> FindAllScriptableObjects<T>() where T : ScriptableObject
     {
         List<T> results = new List<T>();
@@ -101,4 +100,49 @@ public class CityZonesManager : ScriptableObject
         }
     }
 
+    public void GenerateZonesProcedurally(Rect area, int numberOfZones)
+    {
+        cityZones.Clear();
+        AllSpawnPoints.Clear();
+
+        for (int i = 0; i < numberOfZones; i++)
+        {
+            ZoneData newZone = ScriptableObject.CreateInstance<ZoneData>();
+            newZone.name = $"Zone_{i + 1}";
+            newZone.zoneColor = GetRandomZoneType().zoneTypeColor;
+            newZone.spawnPoints = GenerateRandomSpawnPoints(area, 10); // Generar 10 puntos de spawn aleatorios
+            cityZones.Add(newZone);
+            AllSpawnPoints.AddRange(newZone.spawnPoints);
+
+            SaveZoneData(newZone);
+        }
+
+        UpdateZonesToPrefabZones();
+    }
+
+    private ZoneType GetRandomZoneType()
+    {
+        return zoneTypes[Random.Range(0, zoneTypes.Length)];
+    }
+
+    private List<Vector3> GenerateRandomSpawnPoints(Rect area, int count)
+    {
+        List<Vector3> spawnPoints = new List<Vector3>();
+
+        for (int i = 0; i < count; i++)
+        {
+            float x = Random.Range(area.xMin, area.xMax);
+            float y = Random.Range(area.yMin, area.yMax);
+            spawnPoints.Add(new Vector3(x, y, 0));
+        }
+
+        return spawnPoints;
+    }
+
+    private void SaveZoneData(ZoneData zoneData)
+    {
+        string path = $"Assets/CityZones/{zoneData.name}.asset";
+        AssetDatabase.CreateAsset(zoneData, path);
+        AssetDatabase.SaveAssets();
+    }
 }

@@ -11,7 +11,9 @@ public class BuildingDataManager : MonoBehaviour
         BuildingData buildingData = ScriptableObject.CreateInstance<BuildingData>();
         UpdateBuildingData(building, buildingData);
 
-        AssetDatabase.CreateAsset(buildingData, $"Assets/Data/CityData/Buildings/{building.gameObject.name}_BuildingData.asset");
+        string uniqueID = System.Guid.NewGuid().ToString();
+        string path = $"Assets/Data/CityData/Buildings/{building.gameObject.name}_{uniqueID}_BuildingData.asset";
+        AssetDatabase.CreateAsset(buildingData, path);
         AssetDatabase.SaveAssets();
 
         return buildingData;
@@ -29,6 +31,7 @@ public class BuildingDataManager : MonoBehaviour
             buildingData.districtZone = building.districtZone;
             buildingData.cityRaces = building.cityRaces;
             buildingData.buildingPosition = building.transform.position;
+            buildingData.buildingRotation = building.transform.rotation.eulerAngles;
             buildingData.doorPosition = building.doorPosition;
 
             EditorUtility.SetDirty(buildingData);
@@ -40,7 +43,7 @@ public class BuildingDataManager : MonoBehaviour
     public static void DeleteBuildingData(BuildingData buildingData)
     {
 #if UNITY_EDITOR
-        if (buildingData != null)
+        if (buildingData != null && Application.isPlaying)
         {
             AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(buildingData));
         }

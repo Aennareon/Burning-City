@@ -8,5 +8,6 @@ public class BuildingData : ScriptableObject
     public DistrictZone districtZone;
     public CityRaces cityRaces;
     public Vector3 buildingPosition;
+    public Vector3 buildingRotation;
     public Vector3 doorPosition;
 }

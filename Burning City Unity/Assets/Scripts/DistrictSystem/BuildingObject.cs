@@ -20,7 +20,29 @@ public class BuildingObject : MonoBehaviour
 
     private BuildingData buildingData;
 
-    private void Awake()
+#if UNITY_EDITOR
+    private static bool isExitingPlayMode = false;
+
+    [InitializeOnLoadMethod]
+    private static void OnLoad()
+    {
+        EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+    }
+
+    private static void OnPlayModeStateChanged(PlayModeStateChange state)
+    {
+        if (state == PlayModeStateChange.ExitingPlayMode)
+        {
+            isExitingPlayMode = true;
+        }
+        else if (state == PlayModeStateChange.EnteredEditMode)
+        {
+            isExitingPlayMode = false;
+        }
+    }
+#endif
+
+    private void Start()
     {
         buildingData = BuildingDataManager.CreateBuildingData(this);
     }
@@ -32,7 +54,14 @@ public class BuildingObject : MonoBehaviour
 
     private void OnDestroy()
     {
+#if UNITY_EDITOR
+        if (Application.isPlaying && !isExitingPlayMode)
+        {
+            BuildingDataManager.DeleteBuildingData(buildingData);
+        }
+#else
         BuildingDataManager.DeleteBuildingData(buildingData);
+#endif
     }
 
     public void OnDrawGizmos()

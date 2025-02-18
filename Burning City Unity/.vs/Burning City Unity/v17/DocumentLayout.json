@@ -1,12 +1,87 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\district\\buildinggroupmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\district\\buildinggroupmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\districtsystem\\district\\outlinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\district\\outlinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\districtsystem\\district\\outlinedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\district\\outlinedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\district\\buildingoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\district\\buildingoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OutlineDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\OutlineDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\District\\OutlineDatabase.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\OutlineDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\District\\OutlineDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:43:00.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OutlineManager.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAtwEUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:38:01.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BuildingGroupManager.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:37:40.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BuildingOutline.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:57:25.6Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

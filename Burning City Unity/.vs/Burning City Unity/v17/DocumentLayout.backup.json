@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\districtsystem\\assetpostprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\assetpostprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\districtsystem\\district\\outlinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\district\\outlinemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\district\\buildingoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\district\\buildingoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildingdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildingdatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildinginstantiator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildinginstantiator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildingplacement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildingplacement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\districtsystem\\district\\buildinggroupmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\district\\buildinggroupmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BuildingDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingDatabase.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingDatabase.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "OutlineManager.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\District\\OutlineManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T10:12:16.938Z",
+              "WhenOpened": "2025-02-18T13:38:01.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BuildingDataManager.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingDataManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingDataManager.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingDataManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingDataManager.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAMAAAAAAAAAAAAAAA==",
+              "Title": "BuildingGroupManager.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\District\\BuildingGroupManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T11:02:15.577Z",
+              "WhenOpened": "2025-02-18T13:37:40.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BuildingObject.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingObject.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingObject.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingObject.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingObject.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T10:32:59.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BuildingInstantiator.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingInstantiator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingInstantiator.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingInstantiator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingInstantiator.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T11:01:04.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AssetPostprocessor.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\AssetPostprocessor.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\AssetPostprocessor.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\AssetPostprocessor.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\AssetPostprocessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T10:51:16.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BuildingPlacement.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingPlacement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingPlacement.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingPlacement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingPlacement.cs",
+              "DocumentIndex": 1,
+              "Title": "BuildingOutline.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\District\\BuildingOutline.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAmwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T09:24:03.375Z",
+              "WhenOpened": "2025-02-18T12:57:25.6Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BuildingData.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingData.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T10:47:47.887Z"
             }
           ]
         }

@@ -62,12 +62,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingDatabase.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\District\BuildingGroupManager.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\District\OutlineManager.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\AssetPostprocessor.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingPlacement.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingDataManager.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingData.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingInstantiator.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingObject.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\District\BuildingOutline.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\District\OutlineDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

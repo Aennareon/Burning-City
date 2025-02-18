@@ -7,7 +7,7 @@ public class BuildingPlacement : MonoBehaviour
     public List<GameObject> buildingPrefabs;
     public int currentPrefabIndex = 0;
 
-    private GameObject buildingPreview;
+    public GameObject buildingPreview; // Cambiado a public
 
     public float movementSmoothness = 5f;
     public float rotationSpeed = 120f; // Adjust rotation speed as needed

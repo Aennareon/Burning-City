@@ -290,7 +290,7 @@ Transform:
   m_GameObject: {fileID: 551288199}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 125.683426, y: -144.1582, z: -57.147984}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -489,12 +489,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fab99f8f93c81c468a530a8a0eafdc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingGroupManager: {fileID: 1623135524}
+  groupDatabase: {fileID: 11400000, guid: 68678ad8a259b7a4ab9e0d2eaa2783e0, type: 2}
   outlineDatabase: {fileID: 11400000, guid: 1cae87d7dc437ae4ba7646fbbd4724a2, type: 2}
   viewByDistrictZone: 1
-  viewByCityRaces: 0
-  viewByMixedZones: 0
-  viewByMulticulturalZones: 0
+  viewByCityRaces: 1
+  viewByMixedZones: 1
+  viewByMulticulturalZones: 1
 --- !u!114 &1623135524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,7 +508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingDatabase: {fileID: 11400000, guid: 6d34107b571b4374a9f3fb173b74c76f, type: 2}
-  groupingDistance: 5
+  groupDatabase: {fileID: 11400000, guid: 68678ad8a259b7a4ab9e0d2eaa2783e0, type: 2}
+  groupingDistance: 10
 --- !u!4 &1623135525
 Transform:
   m_ObjectHideFlags: 0
@@ -518,7 +519,7 @@ Transform:
   m_GameObject: {fileID: 1623135522}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8559258, y: 0.42899963, z: -5.073449}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class OutlineManager : MonoBehaviour
 {
-    public BuildingGroupManager buildingGroupManager;
+    public GroupDatabase groupDatabase;
     public OutlineDatabase outlineDatabase;
 
     public bool viewByDistrictZone = true;
@@ -15,9 +15,9 @@ public class OutlineManager : MonoBehaviour
 
     void Start()
     {
-        if (buildingGroupManager == null)
+        if (groupDatabase == null)
         {
-            Debug.LogError("BuildingGroupManager is not assigned.");
+            Debug.LogError("GroupDatabase is not assigned.");
             return;
         }
 
@@ -27,7 +27,9 @@ public class OutlineManager : MonoBehaviour
             return;
         }
 
+        Debug.Log("Starting CreateOutlines process...");
         CreateOutlines();
+        Debug.Log("Finished CreateOutlines process.");
         UpdateView();
     }
 
@@ -39,41 +41,41 @@ public class OutlineManager : MonoBehaviour
     void CreateOutlines()
     {
         // Crear outlines para DistrictZone
-        foreach (var group in buildingGroupManager.districtGroups)
+        foreach (var group in groupDatabase.districtGroups)
         {
-            var outlinePrefab = GetOutlinePrefabForDistrict(group.Key);
+            var outlinePrefab = GetOutlinePrefabForDistrict(group.districtZone);
             if (outlinePrefab != null)
             {
-                foreach (var subGroup in group.Value)
+                foreach (var subGroup in group.groups)
                 {
-                    CreateOutline(subGroup, group.Key, outlinePrefab);
+                    CreateOutline(subGroup.positions, group.districtZone, outlinePrefab);
                 }
             }
         }
 
         // Crear outlines para CityRaces
-        foreach (var group in buildingGroupManager.raceGroups)
+        foreach (var group in groupDatabase.raceGroups)
         {
-            var outlinePrefab = GetOutlinePrefabForRace(group.Key);
+            var outlinePrefab = GetOutlinePrefabForRace(group.cityRace);
             if (outlinePrefab != null)
             {
-                foreach (var subGroup in group.Value)
+                foreach (var subGroup in group.groups)
                 {
-                    CreateOutline(subGroup, group.Key, outlinePrefab);
+                    CreateOutline(subGroup.positions, group.cityRace, outlinePrefab);
                 }
             }
         }
 
         // Crear outlines para zonas mixtas
-        foreach (var group in buildingGroupManager.zonasMixtas)
+        foreach (var group in groupDatabase.zonasMixtas)
         {
-            CreateOutline(group, "MixedZone", outlineDatabase.mixZoneOutline);
+            CreateOutline(group.positions, "MixedZone", outlineDatabase.mixZoneOutline);
         }
 
         // Crear outlines para zonas multiculturales
-        foreach (var group in buildingGroupManager.zonasMulticulturales)
+        foreach (var group in groupDatabase.zonasMulticulturales)
         {
-            CreateOutline(group, "MulticulturalZone", outlineDatabase.mixRaceOutline);
+            CreateOutline(group.positions, "MulticulturalZone", outlineDatabase.mixRaceOutline);
         }
     }
 
@@ -103,11 +105,24 @@ public class OutlineManager : MonoBehaviour
 
     void CreateOutline(List<Vector3> positions, object groupKey, GameObject outlinePrefab)
     {
+        if (outlinePrefab == null)
+        {
+            Debug.LogError($"Outline prefab for {groupKey} is not assigned.");
+            return;
+        }
+
+        if (positions == null || positions.Count < 3)
+        {
+            Debug.LogWarning($"Not enough positions to create outline for {groupKey}.");
+            return;
+        }
+
         GameObject outlineObject = Instantiate(outlinePrefab, Vector3.zero, Quaternion.identity, transform);
         outlineObject.name = "Outline_" + groupKey.ToString();
         BuildingOutline buildingOutline = outlineObject.GetComponent<BuildingOutline>();
         buildingOutline.SetPositions(positions);
         outlines.Add(buildingOutline);
+        Debug.Log($"Created outline for {groupKey} with {positions.Count} positions.");
     }
 
     public void SetViewByDistrictZone()

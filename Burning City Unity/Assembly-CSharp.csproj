@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingDataManager.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingData.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingInstantiator.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\District\GroupDatabase.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingObject.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\District\BuildingOutline.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\District\OutlineDatabase.cs" />

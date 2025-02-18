@@ -4,12 +4,8 @@ using UnityEngine;
 public class BuildingGroupManager : MonoBehaviour
 {
     public BuildingDatabase buildingDatabase;
+    public GroupDatabase groupDatabase;
     public float groupingDistance = 10.0f;
-
-    public Dictionary<BuildingObject.DistrictZone, List<List<Vector3>>> districtGroups = new Dictionary<BuildingObject.DistrictZone, List<List<Vector3>>>();
-    public Dictionary<BuildingObject.CityRaces, List<List<Vector3>>> raceGroups = new Dictionary<BuildingObject.CityRaces, List<List<Vector3>>>();
-    public List<List<Vector3>> zonasMixtas = new List<List<Vector3>>();
-    public List<List<Vector3>> zonasMulticulturales = new List<List<Vector3>>();
 
     private List<BuildingData> buildingDataList = new List<BuildingData>();
 
@@ -18,6 +14,12 @@ public class BuildingGroupManager : MonoBehaviour
         if (buildingDatabase == null)
         {
             Debug.LogError("BuildingDatabase is not assigned.");
+            return;
+        }
+
+        if (groupDatabase == null)
+        {
+            Debug.LogError("GroupDatabase is not assigned.");
             return;
         }
 
@@ -36,18 +38,22 @@ public class BuildingGroupManager : MonoBehaviour
                 position.y = 0; // Asegurarse de que la posición esté en el plano XZ
 
                 // Agrupar por DistrictZone
-                if (!districtGroups.ContainsKey(buildingData.districtZone))
+                var districtGroup = groupDatabase.districtGroups.Find(g => g.districtZone == buildingData.districtZone);
+                if (districtGroup == null)
                 {
-                    districtGroups[buildingData.districtZone] = new List<List<Vector3>>();
+                    districtGroup = new GroupDatabase.DistrictGroup { districtZone = buildingData.districtZone };
+                    groupDatabase.districtGroups.Add(districtGroup);
                 }
-                AddToGroup(districtGroups[buildingData.districtZone], position);
+                AddToGroup(districtGroup.groups, position);
 
                 // Agrupar por CityRaces
-                if (!raceGroups.ContainsKey(buildingData.cityRaces))
+                var raceGroup = groupDatabase.raceGroups.Find(g => g.cityRace == buildingData.cityRaces);
+                if (raceGroup == null)
                 {
-                    raceGroups[buildingData.cityRaces] = new List<List<Vector3>>();
+                    raceGroup = new GroupDatabase.RaceGroup { cityRace = buildingData.cityRaces };
+                    groupDatabase.raceGroups.Add(raceGroup);
                 }
-                AddToGroup(raceGroups[buildingData.cityRaces], position);
+                AddToGroup(raceGroup.groups, position);
             }
         }
 
@@ -55,19 +61,21 @@ public class BuildingGroupManager : MonoBehaviour
         IdentifyMixedAndMulticulturalZones();
     }
 
-    void AddToGroup(List<List<Vector3>> groups, Vector3 position)
+    void AddToGroup(List<GroupDatabase.PositionGroup> groups, Vector3 position)
     {
         foreach (var group in groups)
         {
-            if (IsWithinDistance(group, position))
+            if (IsWithinDistance(group.positions, position))
             {
-                group.Add(position);
+                group.positions.Add(position);
                 return;
             }
         }
 
         // Crear un nuevo grupo si no se encontró un grupo cercano
-        groups.Add(new List<Vector3> { position });
+        var newGroup = new GroupDatabase.PositionGroup();
+        newGroup.positions.Add(position);
+        groups.Add(newGroup);
     }
 
     void IdentifyMixedAndMulticulturalZones()
@@ -92,7 +100,7 @@ public class BuildingGroupManager : MonoBehaviour
             }
             if (isMixedZone)
             {
-                AddToGroup(zonasMixtas, position);
+                AddToGroup(groupDatabase.zonasMixtas, position);
             }
 
             // Verificar y agregar a zonas multiculturales
@@ -110,7 +118,7 @@ public class BuildingGroupManager : MonoBehaviour
             }
             if (isMulticulturalZone)
             {
-                AddToGroup(zonasMulticulturales, position);
+                AddToGroup(groupDatabase.zonasMulticulturales, position);
             }
         }
     }

@@ -50,6 +50,7 @@ MonoBehaviour:
   districtZone: 0
   cityRaces: 0
   doorPosition: {x: 1.4, y: 0, z: 0}
+  buildingPrefab: {fileID: 2068138896878039827}
   gizmoSize: 1.7
 --- !u!1 &7091157681892085064
 GameObject:

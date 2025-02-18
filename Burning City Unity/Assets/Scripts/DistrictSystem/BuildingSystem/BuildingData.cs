@@ -10,4 +10,5 @@ public class BuildingData : ScriptableObject
     public Vector3 buildingPosition;
     public Vector3 buildingRotation;
     public Vector3 doorPosition;
+    public GameObject buildingPrefab;
 }

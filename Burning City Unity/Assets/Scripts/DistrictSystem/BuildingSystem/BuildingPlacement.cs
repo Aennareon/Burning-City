@@ -103,8 +103,12 @@ public class BuildingPlacement : MonoBehaviour
         if (buildingPrefabs.Count > 0 && currentPrefabIndex < buildingPrefabs.Count)
         {
             GameObject selectedPrefab = buildingPrefabs[currentPrefabIndex];
-            Instantiate(selectedPrefab, position, rotation);
-            // You can add more configurations or logic here as needed
+            GameObject newBuilding = Instantiate(selectedPrefab, position, rotation);
+            BuildingObject buildingObject = newBuilding.GetComponent<BuildingObject>();
+            if (buildingObject != null)
+            {
+                buildingObject.SetOriginalPrefab(selectedPrefab);
+            }
         }
         else
         {

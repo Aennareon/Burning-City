@@ -5,7 +5,9 @@ using UnityEditor;
 
 public class BuildingDataManager : MonoBehaviour
 {
-    public static BuildingData CreateBuildingData(BuildingObject building)
+    public BuildingDatabase buildingDatabase;
+
+    public BuildingData CreateBuildingData(BuildingObject building)
     {
 #if UNITY_EDITOR
         BuildingData buildingData = ScriptableObject.CreateInstance<BuildingData>();
@@ -15,6 +17,12 @@ public class BuildingDataManager : MonoBehaviour
         string path = $"Assets/Data/CityData/Buildings/{building.gameObject.name}_{uniqueID}_BuildingData.asset";
         AssetDatabase.CreateAsset(buildingData, path);
         AssetDatabase.SaveAssets();
+
+        // Actualizar la base de datos después de crear el archivo de datos
+        if (buildingDatabase != null)
+        {
+            buildingDatabase.UpdateDatabase();
+        }
 
         return buildingData;
 #else
@@ -33,6 +41,7 @@ public class BuildingDataManager : MonoBehaviour
             buildingData.buildingPosition = building.transform.position;
             buildingData.buildingRotation = building.transform.rotation.eulerAngles;
             buildingData.doorPosition = building.doorPosition;
+            buildingData.buildingPrefab = building.buildingPrefab;
 
             EditorUtility.SetDirty(buildingData);
             AssetDatabase.SaveAssets();
@@ -40,12 +49,20 @@ public class BuildingDataManager : MonoBehaviour
 #endif
     }
 
-    public static void DeleteBuildingData(BuildingData buildingData)
+    public void DeleteBuildingData(BuildingData buildingData)
     {
 #if UNITY_EDITOR
         if (buildingData != null && Application.isPlaying)
         {
-            AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(buildingData));
+            string assetPath = AssetDatabase.GetAssetPath(buildingData);
+            AssetDatabase.DeleteAsset(assetPath);
+            AssetDatabase.SaveAssets();
+
+            // Actualizar la base de datos después de eliminar el archivo de datos
+            if (buildingDatabase != null)
+            {
+                buildingDatabase.UpdateDatabase();
+            }
         }
 #endif
     }

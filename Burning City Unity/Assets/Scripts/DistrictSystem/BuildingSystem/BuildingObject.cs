@@ -15,10 +15,12 @@ public class BuildingObject : MonoBehaviour
     public CityRaces cityRaces;
 
     public Vector3 doorPosition;
+    public GameObject buildingPrefab;
 
     public float gizmoSize = 1;
 
     private BuildingData buildingData;
+    private BuildingDataManager buildingDataManager;
 
 #if UNITY_EDITOR
     private static bool isExitingPlayMode = false;
@@ -42,14 +44,36 @@ public class BuildingObject : MonoBehaviour
     }
 #endif
 
+    public void SetOriginalPrefab(GameObject prefab)
+    {
+        buildingPrefab = prefab;
+    }
+
+    public void SetBuildingData(BuildingData data)
+    {
+        buildingData = data;
+        UpdateBuildingFromData();
+    }
+
     private void Start()
     {
-        buildingData = BuildingDataManager.CreateBuildingData(this);
+        buildingDataManager = Object.FindFirstObjectByType<BuildingDataManager>();
+        if (buildingDataManager != null && buildingData == null)
+        {
+            buildingData = buildingDataManager.CreateBuildingData(this);
+        }
+        else if (buildingData == null)
+        {
+            Debug.LogError("BuildingDataManager not found in the scene.");
+        }
     }
 
     private void OnValidate()
     {
-        BuildingDataManager.UpdateBuildingData(this, buildingData);
+        if (buildingData != null)
+        {
+            BuildingDataManager.UpdateBuildingData(this, buildingData);
+        }
     }
 
     private void OnDestroy()
@@ -57,11 +81,29 @@ public class BuildingObject : MonoBehaviour
 #if UNITY_EDITOR
         if (Application.isPlaying && !isExitingPlayMode)
         {
-            BuildingDataManager.DeleteBuildingData(buildingData);
+            if (buildingDataManager != null)
+            {
+                buildingDataManager.DeleteBuildingData(buildingData);
+            }
         }
 #else
-        BuildingDataManager.DeleteBuildingData(buildingData);
+        if (buildingDataManager != null)
+        {
+            buildingDataManager.DeleteBuildingData(buildingData);
+        }
 #endif
+    }
+
+    private void UpdateBuildingFromData()
+    {
+        if (buildingData != null)
+        {
+            buildingType = buildingData.buildingType;
+            districtZone = buildingData.districtZone;
+            cityRaces = buildingData.cityRaces;
+            doorPosition = buildingData.doorPosition;
+            buildingPrefab = buildingData.buildingPrefab;
+        }
     }
 
     public void OnDrawGizmos()
@@ -69,7 +111,10 @@ public class BuildingObject : MonoBehaviour
         Gizmos.color = Color.yellow;
         DrawGizmoCircle(gameObject.transform.position, gizmoSize);
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(gameObject.transform.position + doorPosition, 0.3f);
+
+        // Calcular la posición de la puerta con la rotación del edificio
+        Vector3 rotatedDoorPosition = Quaternion.Euler(0, transform.eulerAngles.y, 0) * doorPosition;
+        Gizmos.DrawSphere(gameObject.transform.position + rotatedDoorPosition, 0.3f);
     }
 
     private void DrawGizmoCircle(Vector3 center, float radius)

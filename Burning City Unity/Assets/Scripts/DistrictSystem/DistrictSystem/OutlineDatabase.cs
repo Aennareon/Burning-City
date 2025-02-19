@@ -22,5 +22,6 @@ public class OutlineDatabase : ScriptableObject
     public List<OutlineRaceType> raceOutlines = new List<OutlineRaceType>();
     public GameObject mixZoneOutline;
     public GameObject mixRaceOutline;
+    public GameObject pathLineRenderer; // Prefab para el LineRenderer de los caminos
 }
 

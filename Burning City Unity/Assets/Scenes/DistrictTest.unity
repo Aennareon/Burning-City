@@ -491,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groupDatabase: {fileID: 11400000, guid: 68678ad8a259b7a4ab9e0d2eaa2783e0, type: 2}
   outlineDatabase: {fileID: 11400000, guid: 1cae87d7dc437ae4ba7646fbbd4724a2, type: 2}
+  buildingGroupManager: {fileID: 1623135524}
   viewByDistrictZone: 1
   viewByCityRaces: 1
   viewByMixedZones: 1
@@ -509,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingDatabase: {fileID: 11400000, guid: 6d34107b571b4374a9f3fb173b74c76f, type: 2}
   groupDatabase: {fileID: 11400000, guid: 68678ad8a259b7a4ab9e0d2eaa2783e0, type: 2}
-  groupingDistance: 10
+  groupingDistance: 5
 --- !u!4 &1623135525
 Transform:
   m_ObjectHideFlags: 0

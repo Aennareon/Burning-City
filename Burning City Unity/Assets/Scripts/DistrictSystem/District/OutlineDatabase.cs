@@ -22,6 +22,5 @@ public class OutlineDatabase : ScriptableObject
     public List<OutlineRaceType> raceOutlines = new List<OutlineRaceType>();
     public GameObject mixZoneOutline;
     public GameObject mixRaceOutline;
-
 }
 

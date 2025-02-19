@@ -5,6 +5,7 @@ public class OutlineManager : MonoBehaviour
 {
     public GroupDatabase groupDatabase;
     public OutlineDatabase outlineDatabase;
+    public BuildingGroupManager buildingGroupManager; // Referencia a BuildingGroupManager
 
     public bool viewByDistrictZone = true;
     public bool viewByCityRaces = false;
@@ -12,6 +13,18 @@ public class OutlineManager : MonoBehaviour
     public bool viewByMulticulturalZones = false;
 
     private List<BuildingOutline> outlines = new List<BuildingOutline>();
+
+    void OnEnable()
+    {
+        BuildingDataManager.OnBuildingCreated += OnBuildingCreated;
+        BuildingDataManager.OnBuildingDeleted += OnBuildingDeleted;
+    }
+
+    void OnDisable()
+    {
+        BuildingDataManager.OnBuildingCreated -= OnBuildingCreated;
+        BuildingDataManager.OnBuildingDeleted -= OnBuildingDeleted;
+    }
 
     void Start()
     {
@@ -27,7 +40,14 @@ public class OutlineManager : MonoBehaviour
             return;
         }
 
+        if (buildingGroupManager == null)
+        {
+            Debug.LogError("BuildingGroupManager is not assigned.");
+            return;
+        }
+
         Debug.Log("Starting CreateOutlines process...");
+        buildingGroupManager.GroupBuildings(); // Asegurarse de agrupar edificios al inicio
         CreateOutlines();
         Debug.Log("Finished CreateOutlines process.");
         UpdateView();
@@ -38,8 +58,29 @@ public class OutlineManager : MonoBehaviour
         UpdateView();
     }
 
+    void OnBuildingCreated(BuildingData buildingData)
+    {
+        // Lógica para actualizar las outlines cuando se crea un edificio
+        buildingGroupManager.GroupBuildings();
+        CreateOutlines();
+    }
+
+    void OnBuildingDeleted(BuildingData buildingData)
+    {
+        // Lógica para actualizar las outlines cuando se elimina un edificio
+        buildingGroupManager.GroupBuildings();
+        CreateOutlines();
+    }
+
     void CreateOutlines()
     {
+        // Limpiar outlines existentes
+        foreach (var outline in outlines)
+        {
+            Destroy(outline.gameObject);
+        }
+        outlines.Clear();
+
         // Crear outlines para DistrictZone
         foreach (var group in groupDatabase.districtGroups)
         {
@@ -50,6 +91,10 @@ public class OutlineManager : MonoBehaviour
                 {
                     CreateOutline(subGroup.positions, group.districtZone, outlinePrefab);
                 }
+            }
+            else
+            {
+                Debug.LogWarning($"No outline prefab found for district zone: {group.districtZone}");
             }
         }
 
@@ -64,18 +109,36 @@ public class OutlineManager : MonoBehaviour
                     CreateOutline(subGroup.positions, group.cityRace, outlinePrefab);
                 }
             }
+            else
+            {
+                Debug.LogWarning($"No outline prefab found for city race: {group.cityRace}");
+            }
         }
 
         // Crear outlines para zonas mixtas
-        foreach (var group in groupDatabase.zonasMixtas)
+        if (outlineDatabase.mixZoneOutline != null)
         {
-            CreateOutline(group.positions, "MixedZone", outlineDatabase.mixZoneOutline);
+            foreach (var group in groupDatabase.zonasMixtas)
+            {
+                CreateOutline(group.positions, "MixedZone", outlineDatabase.mixZoneOutline);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No outline prefab found for mixed zones.");
         }
 
         // Crear outlines para zonas multiculturales
-        foreach (var group in groupDatabase.zonasMulticulturales)
+        if (outlineDatabase.mixRaceOutline != null)
         {
-            CreateOutline(group.positions, "MulticulturalZone", outlineDatabase.mixRaceOutline);
+            foreach (var group in groupDatabase.zonasMulticulturales)
+            {
+                CreateOutline(group.positions, "MulticulturalZone", outlineDatabase.mixRaceOutline);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No outline prefab found for multicultural zones.");
         }
     }
 
@@ -120,9 +183,16 @@ public class OutlineManager : MonoBehaviour
         GameObject outlineObject = Instantiate(outlinePrefab, Vector3.zero, Quaternion.identity, transform);
         outlineObject.name = "Outline_" + groupKey.ToString();
         BuildingOutline buildingOutline = outlineObject.GetComponent<BuildingOutline>();
-        buildingOutline.SetPositions(positions);
-        outlines.Add(buildingOutline);
-        Debug.Log($"Created outline for {groupKey} with {positions.Count} positions.");
+        if (buildingOutline != null)
+        {
+            buildingOutline.SetPositions(positions);
+            outlines.Add(buildingOutline);
+            Debug.Log($"Created outline for {groupKey} with {positions.Count} positions.");
+        }
+        else
+        {
+            Debug.LogError($"BuildingOutline component not found on prefab for {groupKey}.");
+        }
     }
 
     public void SetViewByDistrictZone()

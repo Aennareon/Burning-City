@@ -26,8 +26,14 @@ public class BuildingGroupManager : MonoBehaviour
         GroupBuildings();
     }
 
-    void GroupBuildings()
+    public void GroupBuildings() // Cambiar a public
     {
+        buildingDataList.Clear();
+        groupDatabase.districtGroups.Clear();
+        groupDatabase.raceGroups.Clear();
+        groupDatabase.zonasMixtas.Clear();
+        groupDatabase.zonasMulticulturales.Clear();
+
         foreach (BuildingData buildingData in buildingDatabase.buildingDataObjects)
         {
             if (buildingData.buildingPrefab != null)

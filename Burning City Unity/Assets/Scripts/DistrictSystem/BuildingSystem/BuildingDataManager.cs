@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -6,6 +7,9 @@ using UnityEditor;
 public class BuildingDataManager : MonoBehaviour
 {
     public BuildingDatabase buildingDatabase;
+
+    public static event Action<BuildingData> OnBuildingCreated;
+    public static event Action<BuildingData> OnBuildingDeleted;
 
     public BuildingData CreateBuildingData(BuildingObject building)
     {
@@ -24,6 +28,7 @@ public class BuildingDataManager : MonoBehaviour
             buildingDatabase.UpdateDatabase();
         }
 
+        OnBuildingCreated?.Invoke(buildingData);
         return buildingData;
 #else
         return null;
@@ -63,6 +68,8 @@ public class BuildingDataManager : MonoBehaviour
             {
                 buildingDatabase.UpdateDatabase();
             }
+
+            OnBuildingDeleted?.Invoke(buildingData);
         }
 #endif
     }

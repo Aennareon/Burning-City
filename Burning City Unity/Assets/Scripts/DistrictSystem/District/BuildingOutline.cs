@@ -54,17 +54,21 @@ public class BuildingOutline : MonoBehaviour
 
         List<Vector3> hull = CalculateConvexHull(buildingPositions);
         Vector3 centroid = CalculateCentroid(hull);
-        Vector3[] outlinePoints = new Vector3[hull.Count];
+        List<Vector3> outlinePoints = new List<Vector3>();
 
         for (int i = 0; i < hull.Count; i++)
         {
             Vector3 direction = (hull[i] - centroid).normalized;
-            outlinePoints[i] = hull[i] + direction * distanceFromBuildings;
-            outlinePoints[i].y = 0; // Asegurarse de que la posición esté en el plano XZ
+            Vector3 point = hull[i] + direction * distanceFromBuildings;
+            point.y = 0; // Asegurarse de que la posición esté en el plano XZ
+            outlinePoints.Add(point);
         }
 
-        lineRenderer.positionCount = outlinePoints.Length;
-        lineRenderer.SetPositions(outlinePoints);
+        // Aplicar suavizado a las esquinas
+        outlinePoints = ChaikinSmoothing(outlinePoints, 2);
+
+        lineRenderer.positionCount = outlinePoints.Count;
+        lineRenderer.SetPositions(outlinePoints.ToArray());
     }
 
     List<Vector3> CalculateConvexHull(List<Vector3> points)
@@ -113,5 +117,38 @@ public class BuildingOutline : MonoBehaviour
     float Cross(Vector3 o, Vector3 a, Vector3 b)
     {
         return (a.x - o.x) * (b.z - o.z) - (a.z - o.z) * (b.x - o.x);
+    }
+
+    List<Vector3> ChaikinSmoothing(List<Vector3> points, int iterations)
+    {
+        for (int iter = 0; iter < iterations; iter++)
+        {
+            List<Vector3> newPoints = new List<Vector3>();
+            for (int i = 0; i < points.Count - 1; i++)
+            {
+                Vector3 p0 = points[i];
+                Vector3 p1 = points[i + 1];
+
+                Vector3 q = 0.75f * p0 + 0.25f * p1;
+                Vector3 r = 0.25f * p0 + 0.75f * p1;
+
+                newPoints.Add(q);
+                newPoints.Add(r);
+            }
+
+            // Cerrar el bucle
+            Vector3 pLast = points[points.Count - 1];
+            Vector3 pFirst = points[0];
+
+            Vector3 qLast = 0.75f * pLast + 0.25f * pFirst;
+            Vector3 rFirst = 0.25f * pLast + 0.75f * pFirst;
+
+            newPoints.Add(qLast);
+            newPoints.Add(rFirst);
+
+            points = newPoints;
+        }
+
+        return points;
     }
 }

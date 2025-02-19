@@ -14,22 +14,24 @@ public class BuildingDatabase : ScriptableObject
 
     public void UpdateDatabase()
     {
+#if UNITY_EDITOR
+        // Lógica para actualizar la base de datos desde el directorio
         UpdateDatabaseFromDirectory(directoryPath);
+#endif
     }
 
     public void UpdateDatabaseFromDirectory(string directoryPath)
     {
-        if (!Directory.Exists(directoryPath))
-        {
-            Debug.LogError($"Directory not found: {directoryPath}");
-            return;
-        }
-
+#if UNITY_EDITOR
+        // Lógica para cargar los datos desde el directorio
         string[] assetPaths = AssetDatabase.FindAssets("t:BuildingData", new[] { directoryPath });
-        buildingDataObjects = assetPaths.Select(assetPath =>
+        buildingDataObjects = new BuildingData[assetPaths.Length];
+
+        for (int i = 0; i < assetPaths.Length; i++)
         {
-            string path = AssetDatabase.GUIDToAssetPath(assetPath);
-            return AssetDatabase.LoadAssetAtPath<BuildingData>(path);
-        }).Where(buildingData => buildingData != null).ToArray();
+            string assetPath = AssetDatabase.GUIDToAssetPath(assetPaths[i]);
+            buildingDataObjects[i] = AssetDatabase.LoadAssetAtPath<BuildingData>(assetPath);
+        }
+#endif
     }
 }

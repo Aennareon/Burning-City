@@ -13,6 +13,9 @@ public class BuildingPlacement : MonoBehaviour
     public float rotationSpeed = 120f; // Adjust rotation speed as needed
     private float continuousRotation = 0f;
 
+    public bool placementMode = true; // Controlador para el modo de colocación
+    public bool rotationMode = true; // Controlador para el modo de rotación
+
     void Start()
     {
         CreateBuildingPreview();
@@ -20,13 +23,21 @@ public class BuildingPlacement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))  // Left click
+        if (placementMode)
         {
-            PlaceBuildingAtObtainedPosition();
+            if (Input.GetMouseButtonDown(0))  // Left click
+            {
+                PlaceBuildingAtObtainedPosition();
+            }
+
+            UpdateBuildingPreview();
         }
 
-        UpdateBuildingPreview();
-        RotatePreviewContinuously();
+        if (rotationMode)
+        {
+            RotatePreviewContinuously();
+        }
+
         ChangePrefabWithKeys();
     }
 

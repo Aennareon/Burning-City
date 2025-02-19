@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 551288202}
   - component: {fileID: 551288203}
   m_Layer: 0
-  m_Name: BuildingPlacer
+  m_Name: BuildingManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,6 +281,8 @@ MonoBehaviour:
   buildingPreview: {fileID: 0}
   movementSmoothness: 5
   rotationSpeed: 120
+  placementMode: 0
+  rotationMode: 0
 --- !u!4 &551288201
 Transform:
   m_ObjectHideFlags: 0
@@ -289,7 +291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551288199}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -471,7 +473,7 @@ GameObject:
   - component: {fileID: 1623135524}
   - component: {fileID: 1623135523}
   m_Layer: 0
-  m_Name: DistrictsOutlines
+  m_Name: OutlineManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,7 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingDatabase: {fileID: 11400000, guid: 6d34107b571b4374a9f3fb173b74c76f, type: 2}
   groupDatabase: {fileID: 11400000, guid: 68678ad8a259b7a4ab9e0d2eaa2783e0, type: 2}
-  groupingDistance: 5
+  groupingDistance: 20
 --- !u!4 &1623135525
 Transform:
   m_ObjectHideFlags: 0

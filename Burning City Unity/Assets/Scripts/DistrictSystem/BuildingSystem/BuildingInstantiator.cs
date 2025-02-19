@@ -4,8 +4,17 @@ public class BuildingInstantiator : MonoBehaviour
 {
     public BuildingDatabase buildingDatabase;
 
-    private void Start()
+    private void Awake()
     {
+        if (buildingDatabase == null)
+        {
+            Debug.LogError("BuildingDatabase is not assigned.");
+            return;
+        }
+
+        // Asegurarse de que la base de datos esté actualizada
+        buildingDatabase.UpdateDatabase();
+
         InstantiateBuildings();
     }
 

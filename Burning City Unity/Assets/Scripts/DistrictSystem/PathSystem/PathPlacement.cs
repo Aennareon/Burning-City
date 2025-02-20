@@ -6,9 +6,13 @@ public class PathPlacement : MonoBehaviour
     public GameObject pointPrefab;
     // public OutlineDatabase outlineDatabase; // Asegúrate de definir e importar OutlineDatabase si es necesario
     public float movementSmoothness = 5f;
-    public bool placementMode = true;
     public float curveAmount = 0.5f;
     public int interpolationSteps = 10;
+    public bool placementMode = true;
+    public bool useCurves = true; // Nueva bool para activar o desactivar curvas
+    public bool enableSnap = true; // Nueva bool para activar o desactivar el snap
+    public float snapDistance = 1f; // Distancia para el imán y el snap
+    public BuildingDatabase buildingDatabase; // Hacer pública la referencia a BuildingDatabase
 
     private List<List<GameObject>> paths = new List<List<GameObject>>();
     private List<GameObject> currentPath = new List<GameObject>();
@@ -24,6 +28,7 @@ public class PathPlacement : MonoBehaviour
     void Start()
     {
         CreatePathPreview();
+        // buildingDatabase = Object.FindFirstObjectByType<BuildingDatabase>(); // Eliminar esta línea
     }
 
     void Update()
@@ -63,6 +68,14 @@ public class PathPlacement : MonoBehaviour
         {
             RemoveLastPoint();
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            useCurves = !useCurves; // Alternar entre caminos rectos y curvas
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            enableSnap = !enableSnap; // Alternar entre activar y desactivar el snap
+        }
     }
 
     void CreatePathPreview()
@@ -87,7 +100,7 @@ public class PathPlacement : MonoBehaviour
         if (!adjustingTangents)
         {
             GameObject cursorPoint = new GameObject("CursorPoint");
-            cursorPoint.transform.position = GetMouseWorldPosition();
+            cursorPoint.transform.position = GetSnappedPosition(GetMouseWorldPosition());
             previewPath.Add(cursorPoint);
 
             UpdateLineRenderer(lineRenderer, previewPath);
@@ -111,10 +124,11 @@ public class PathPlacement : MonoBehaviour
     {
         if (!pathPreview.activeSelf || adjustingTangents) return;
 
-        GameObject newPoint = Instantiate(pointPrefab, pathPreview.transform.position, Quaternion.identity);
+        Vector3 position = GetSnappedPosition(pathPreview.transform.position);
+        GameObject newPoint = Instantiate(pointPrefab, position, Quaternion.identity);
         currentPath.Add(newPoint);
 
-        if (currentPath.Count > 1)
+        if (currentPath.Count > 1 && useCurves)
         {
             GameObject previousPoint = currentPath[currentPath.Count - 2];
             controlPoints[newPoint] = (previousPoint.transform.position + newPoint.transform.position) / 2;
@@ -197,7 +211,7 @@ public class PathPlacement : MonoBehaviour
         for (int i = 0; i < path.Count - 1; i++)
         {
             Vector3 p0 = path[i].transform.position;
-            Vector3 p1 = controlPoints.ContainsKey(path[i + 1]) ? controlPoints[path[i + 1]] : (p0 + path[i + 1].transform.position) / 2;
+            Vector3 p1 = controlPoints.ContainsKey(path[i + 1]) && useCurves ? controlPoints[path[i + 1]] : (p0 + path[i + 1].transform.position) / 2;
             Vector3 p2 = path[i + 1].transform.position;
 
             for (int j = 0; j < interpolationSteps; j++)
@@ -215,5 +229,39 @@ public class PathPlacement : MonoBehaviour
     {
         float u = 1 - t;
         return u * u * p0 + 2 * u * t * p1 + t * t * p2;
+    }
+
+    Vector3 GetSnappedPosition(Vector3 originalPosition)
+    {
+        if (!enableSnap) return originalPosition;
+
+        // Implementar el sistema de imán y snap
+        Vector3 snappedPosition = originalPosition;
+
+        // Snap a puntos de caminos ya generados
+        foreach (var path in paths)
+        {
+            foreach (var point in path)
+            {
+                if (Vector3.Distance(originalPosition, point.transform.position) < snapDistance)
+                {
+                    return point.transform.position;
+                }
+            }
+        }
+
+        // Snap a puertas de edificios
+        if (buildingDatabase != null)
+        {
+            foreach (var doorPosition in buildingDatabase.GetAllDoorPositions())
+            {
+                if (Vector3.Distance(originalPosition, doorPosition) < snapDistance)
+                {
+                    return doorPosition;
+                }
+            }
+        }
+
+        return snappedPosition;
     }
 }

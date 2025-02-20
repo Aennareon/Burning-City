@@ -573,9 +573,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointPrefab: {fileID: 7201476392224922230, guid: 5652c7ddeee23954e9cea623a156dd50, type: 3}
-  outlineDatabase: {fileID: 11400000, guid: 1cae87d7dc437ae4ba7646fbbd4724a2, type: 2}
   movementSmoothness: 5
+  curveAmount: 0.5
+  interpolationSteps: 10
   placementMode: 1
+  useCurves: 0
+  enableSnap: 1
+  snapDistance: 5
+  buildingDatabase: {fileID: 11400000, guid: 6d34107b571b4374a9f3fb173b74c76f, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

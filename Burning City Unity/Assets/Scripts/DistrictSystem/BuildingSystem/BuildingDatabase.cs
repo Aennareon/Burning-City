@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.IO;
 using System.Linq;
+using System.Collections.Generic; // Asegúrate de incluir esta directiva
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -33,5 +34,19 @@ public class BuildingDatabase : ScriptableObject
             buildingDataObjects[i] = AssetDatabase.LoadAssetAtPath<BuildingData>(assetPath);
         }
 #endif
+    }
+
+    public List<Vector3> GetAllDoorPositions()
+    {
+        List<Vector3> doorPositions = new List<Vector3>();
+        BuildingObject[] buildingObjects = Object.FindObjectsByType<BuildingObject>(FindObjectsSortMode.None);
+
+        foreach (var building in buildingObjects)
+        {
+            Vector3 rotatedDoorPosition = Quaternion.Euler(0, building.transform.eulerAngles.y, 0) * building.doorPosition;
+            doorPositions.Add(building.transform.position + rotatedDoorPosition);
+        }
+
+        return doorPositions;
     }
 }

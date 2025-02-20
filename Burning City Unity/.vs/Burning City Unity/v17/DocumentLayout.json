@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\districtsystem\\pathsystem\\pathplacement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\pathsystem\\pathplacement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\pathsystem\\pathplacement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildingsystem\\buildingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildingsystem\\buildingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\assets\\scripts\\districtsystem\\buildingsystem\\buildingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\buildingsystem\\buildingdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|c:\\users\\mique\\documents\\workspace-git\\burning-city\\burning city unity\\assets\\scripts\\districtsystem\\pathsystem\\citypathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34D30787-930B-38BB-D655-7D0202DD5640}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\districtsystem\\pathsystem\\citypathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BuildingDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingDatabase.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:24:38.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BuildingObject.cs",
-              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingObject.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingObject.cs",
-              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingObject.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\BuildingSystem\\BuildingObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CityPathManager.cs",
+              "DocumentMoniker": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\PathSystem\\CityPathManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\PathSystem\\CityPathManager.cs",
+              "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\PathSystem\\CityPathManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\PathSystem\\CityPathManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:24:40.168Z",
+              "WhenOpened": "2025-02-20T18:43:27.098Z",
               "EditorCaption": ""
             },
             {
@@ -58,7 +41,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\DistrictSystem\\PathSystem\\PathPlacement.cs",
               "ToolTip": "C:\\Users\\mique\\Documents\\Workspace-GIT\\Burning-City\\Burning City Unity\\Assets\\Scripts\\DistrictSystem\\PathSystem\\PathPlacement.cs",
               "RelativeToolTip": "Assets\\Scripts\\DistrictSystem\\PathSystem\\PathPlacement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAzwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T08:49:59.848Z",
               "EditorCaption": ""

@@ -538,6 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008454947}
   - component: {fileID: 2008454948}
+  - component: {fileID: 2008454949}
   m_Layer: 0
   m_Name: PathManager
   m_TagString: Untagged
@@ -577,10 +578,25 @@ MonoBehaviour:
   curveAmount: 0.5
   interpolationSteps: 10
   placementMode: 1
-  useCurves: 0
+  useCurves: 1
   enableSnap: 1
   snapDistance: 5
   buildingDatabase: {fileID: 11400000, guid: 6d34107b571b4374a9f3fb173b74c76f, type: 2}
+  pathManager: {fileID: 2008454949}
+--- !u!114 &2008454949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008454946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e57a7344511f13488856a30b28d89bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathDatabase: {fileID: 11400000, guid: 214096ba58cd1d848bfa1e6334a3a8ad, type: 2}
+  pathDataDirectory: Assets/Data/CityData/Paths
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

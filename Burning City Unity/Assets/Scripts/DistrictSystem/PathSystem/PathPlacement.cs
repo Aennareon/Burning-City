@@ -13,6 +13,7 @@ public class PathPlacement : MonoBehaviour
     public bool enableSnap = true; // Nueva bool para activar o desactivar el snap
     public float snapDistance = 1f; // Distancia para el imán y el snap
     public BuildingDatabase buildingDatabase; // Hacer pública la referencia a BuildingDatabase
+    public CustomCityPathManager pathManager; // Referencia al CustomCityPathManager
 
     private List<List<GameObject>> paths = new List<List<GameObject>>();
     private List<GameObject> currentPath = new List<GameObject>();
@@ -166,6 +167,9 @@ public class PathPlacement : MonoBehaviour
 
         paths.Add(new List<GameObject>(currentPath));
 
+        // Guardar el camino en la base de datos
+        pathManager.SavePath(currentPath, controlPoints, useCurves);
+
         // Crear un nuevo LineRenderer para el camino terminado
         GameObject finishedPath = new GameObject("FinishedPath");
         LineRenderer finishedLineRenderer = finishedPath.AddComponent<LineRenderer>();
@@ -265,3 +269,6 @@ public class PathPlacement : MonoBehaviour
         return snappedPosition;
     }
 }
+
+
+

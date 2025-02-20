@@ -12,14 +12,13 @@ public class PathPlacement : MonoBehaviour
 
     private List<List<GameObject>> paths = new List<List<GameObject>>();
     private List<GameObject> currentPath = new List<GameObject>();
-    private List<GameObject> pathOutlines = new List<GameObject>();
+    private List<LineRenderer> pathOutlines = new List<LineRenderer>();
     private LineRenderer lineRenderer;
     private GameObject pathPreview;
     private Vector3 previewOffset = Vector3.zero;
     private bool adjustingTangents = false;
     private Vector3 tangentStartPosition;
     private Vector3 controlPoint;
-    private int lastPlacedPointIndex = -1;
     private Dictionary<GameObject, Vector3> controlPoints = new Dictionary<GameObject, Vector3>();
 
     void Start()
@@ -77,12 +76,28 @@ public class PathPlacement : MonoBehaviour
 
     void UpdatePathPreview()
     {
-        if (!adjustingTangents)
+        if (!Input.GetMouseButton(0) && !adjustingTangents)
         {
             Vector3 instancePosition = GetMouseWorldPosition();
             pathPreview.transform.position = Vector3.Lerp(pathPreview.transform.position, instancePosition, movementSmoothness * Time.deltaTime);
         }
-        UpdateLineRenderer();
+
+        // Añadir la posición del cursor al final del camino actual para la vista previa
+        List<GameObject> previewPath = new List<GameObject>(currentPath);
+        if (!adjustingTangents)
+        {
+            GameObject cursorPoint = new GameObject("CursorPoint");
+            cursorPoint.transform.position = GetMouseWorldPosition();
+            previewPath.Add(cursorPoint);
+
+            UpdateLineRenderer(lineRenderer, previewPath);
+
+            Destroy(cursorPoint); // Destruir el punto del cursor después de actualizar la vista previa
+        }
+        else
+        {
+            UpdateLineRenderer(lineRenderer, previewPath);
+        }
     }
 
     Vector3 GetMouseWorldPosition()
@@ -94,7 +109,7 @@ public class PathPlacement : MonoBehaviour
 
     void PlacePointAtObtainedPosition()
     {
-        if (!pathPreview.activeSelf) return;
+        if (!pathPreview.activeSelf || adjustingTangents) return;
 
         GameObject newPoint = Instantiate(pointPrefab, pathPreview.transform.position, Quaternion.identity);
         currentPath.Add(newPoint);
@@ -105,7 +120,7 @@ public class PathPlacement : MonoBehaviour
             controlPoints[newPoint] = (previousPoint.transform.position + newPoint.transform.position) / 2;
         }
 
-        UpdateLineRenderer();
+        UpdateLineRenderer(lineRenderer, currentPath);
     }
 
     void AdjustTangents()
@@ -116,7 +131,7 @@ public class PathPlacement : MonoBehaviour
         GameObject lastPoint = currentPath[currentPath.Count - 1];
         controlPoints[lastPoint] = mousePosition;
 
-        UpdateLineRenderer();
+        UpdateLineRenderer(lineRenderer, currentPath);
     }
 
     void RemoveLastPoint()
@@ -128,7 +143,7 @@ public class PathPlacement : MonoBehaviour
         Destroy(lastPoint);
         controlPoints.Remove(lastPoint);
 
-        UpdateLineRenderer();
+        UpdateLineRenderer(lineRenderer, currentPath);
     }
 
     void FinishCurrentPath()
@@ -136,9 +151,19 @@ public class PathPlacement : MonoBehaviour
         if (currentPath.Count == 0) return;
 
         paths.Add(new List<GameObject>(currentPath));
+
+        // Crear un nuevo LineRenderer para el camino terminado
+        GameObject finishedPath = new GameObject("FinishedPath");
+        LineRenderer finishedLineRenderer = finishedPath.AddComponent<LineRenderer>();
+        finishedLineRenderer.startWidth = 0.1f;
+        finishedLineRenderer.endWidth = 0.1f;
+        finishedLineRenderer.material = new Material(Shader.Find("Sprites/Default")) { color = Color.yellow };
+
+        pathOutlines.Add(finishedLineRenderer);
+        UpdateLineRenderer(finishedLineRenderer, currentPath);
+
         currentPath.Clear();
         controlPoints.Clear();
-        UpdateLineRenderer();
     }
 
     void ClearCurrentPath()
@@ -149,14 +174,14 @@ public class PathPlacement : MonoBehaviour
         }
         currentPath.Clear();
         controlPoints.Clear();
-        UpdateLineRenderer();
+        UpdateLineRenderer(lineRenderer, currentPath);
     }
 
-    void UpdateLineRenderer()
+    void UpdateLineRenderer(LineRenderer lineRenderer, List<GameObject> path)
     {
         if (lineRenderer == null) return;
 
-        List<Vector3> interpolatedPoints = InterpolatePath(currentPath);
+        List<Vector3> interpolatedPoints = InterpolatePath(path);
         lineRenderer.positionCount = interpolatedPoints.Count;
         for (int i = 0; i < interpolatedPoints.Count; i++)
         {

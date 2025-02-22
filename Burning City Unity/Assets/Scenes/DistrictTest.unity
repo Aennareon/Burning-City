@@ -574,15 +574,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointPrefab: {fileID: 7201476392224922230, guid: 5652c7ddeee23954e9cea623a156dd50, type: 3}
-  movementSmoothness: 5
-  curveAmount: 0.5
-  interpolationSteps: 10
+  controlPointPrefab: {fileID: 7201476392224922230, guid: 5652c7ddeee23954e9cea623a156dd50, type: 3}
+  previewPointPrefab: {fileID: 7201476392224922230, guid: 5652c7ddeee23954e9cea623a156dd50, type: 3}
+  movementSmoothness: 10
+  curveAmount: 1
+  interpolationSteps: 15
   placementMode: 1
-  useCurves: 1
+  useCurves: 0
   enableSnap: 1
   snapDistance: 5
+  pathWidth: 1.5
+  pathMaterial: {fileID: 2100000, guid: f0843edeb1bd7df4f90cad7c433414b6, type: 2}
   buildingDatabase: {fileID: 11400000, guid: 6d34107b571b4374a9f3fb173b74c76f, type: 2}
   pathManager: {fileID: 2008454949}
+  noiseScale: 3
 --- !u!114 &2008454949
 MonoBehaviour:
   m_ObjectHideFlags: 0

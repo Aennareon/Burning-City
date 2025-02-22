@@ -1,117 +1,73 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PathPlacement : MonoBehaviour
 {
     public GameObject pointPrefab;
-    // public OutlineDatabase outlineDatabase; // Asegúrate de definir e importar OutlineDatabase si es necesario
+    public GameObject controlPointPrefab;
+    public GameObject previewPointPrefab;
     public float movementSmoothness = 5f;
     public float curveAmount = 0.5f;
     public int interpolationSteps = 10;
     public bool placementMode = true;
-    public bool useCurves = true; // Nueva bool para activar o desactivar curvas
-    public bool enableSnap = true; // Nueva bool para activar o desactivar el snap
-    public float snapDistance = 1f; // Distancia para el imán y el snap
-    public BuildingDatabase buildingDatabase; // Hacer pública la referencia a BuildingDatabase
-    public CustomCityPathManager pathManager; // Referencia al CustomCityPathManager
+    public bool useCurves = true;
+    public bool enableSnap = true;
+    public float snapDistance = 1f;
+    public float pathWidth = 1f;
+    public Material pathMaterial;
+    public BuildingDatabase buildingDatabase;
+    public CustomCityPathManager pathManager;
+    public float noiseScale = 0.1f;
 
-    private List<List<GameObject>> paths = new List<List<GameObject>>();
     private List<GameObject> currentPath = new List<GameObject>();
-    private List<LineRenderer> pathOutlines = new List<LineRenderer>();
-    private LineRenderer lineRenderer;
+    private List<MeshFilter> pathMeshes = new List<MeshFilter>();
+    private MeshFilter meshFilter;
     private GameObject pathPreview;
-    private Vector3 previewOffset = Vector3.zero;
-    private bool adjustingTangents = false;
-    private Vector3 tangentStartPosition;
-    private Vector3 controlPoint;
+    private GameObject previewPoint;
     private Dictionary<GameObject, Vector3> controlPoints = new Dictionary<GameObject, Vector3>();
+    private Dictionary<GameObject, GameObject> controlPointObjects = new Dictionary<GameObject, GameObject>();
+    private HashSet<Vector3> existingPoints = new HashSet<Vector3>();
+    private GameObject selectedControlPoint = null;
+    private GameObject adjustingCurveFor = null;
 
     void Start()
     {
         CreatePathPreview();
-        // buildingDatabase = Object.FindFirstObjectByType<BuildingDatabase>(); // Eliminar esta línea
+        CreatePreviewPoint();
     }
 
     void Update()
     {
-        if (placementMode)
-        {
-            HandleInput();
-            UpdatePathPreview();
-        }
-        else
-        {
-            ClearCurrentPath();
-        }
+        if (placementMode) HandleInput();
+        if (selectedControlPoint != null) MoveControlPoint();
+        if (adjustingCurveFor != null) AdjustCurve();
+        UpdatePreviewPoint();
     }
 
     void HandleInput()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            PlacePointAtObtainedPosition();
-            adjustingTangents = true;
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            adjustingTangents = false;
-            previewOffset = Vector3.zero;
-        }
-        if (adjustingTangents)
-        {
-            AdjustTangents();
-        }
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            FinishCurrentPath();
-        }
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            RemoveLastPoint();
-        }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            useCurves = !useCurves; // Alternar entre caminos rectos y curvas
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            enableSnap = !enableSnap; // Alternar entre activar y desactivar el snap
-        }
+        if (Input.GetMouseButtonDown(0)) PlaceOrSelectPoint();
+        if (Input.GetMouseButton(0)) adjustingCurveFor = currentPath.LastOrDefault();
+        if (Input.GetMouseButtonUp(0)) { selectedControlPoint = null; adjustingCurveFor = null; }
+        if (Input.GetKeyDown(KeyCode.Return)) FinishCurrentPath();
+        if (Input.GetKeyDown(KeyCode.Backspace)) RemoveLastPoint();
+        if (Input.GetKeyDown(KeyCode.C)) useCurves = !useCurves;
+        if (Input.GetKeyDown(KeyCode.S)) enableSnap = !enableSnap;
     }
 
     void CreatePathPreview()
     {
         pathPreview = new GameObject("PathPreview");
-        lineRenderer = pathPreview.AddComponent<LineRenderer>();
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default")) { color = Color.yellow };
+        meshFilter = pathPreview.AddComponent<MeshFilter>();
+        var renderer = pathPreview.AddComponent<MeshRenderer>();
+        renderer.material = pathMaterial ?? new Material(Shader.Find("Standard")) { color = Color.yellow };
     }
 
-    void UpdatePathPreview()
+    void CreatePreviewPoint()
     {
-        if (!Input.GetMouseButton(0) && !adjustingTangents)
-        {
-            Vector3 instancePosition = GetMouseWorldPosition();
-            pathPreview.transform.position = Vector3.Lerp(pathPreview.transform.position, instancePosition, movementSmoothness * Time.deltaTime);
-        }
-
-        // Añadir la posición del cursor al final del camino actual para la vista previa
-        List<GameObject> previewPath = new List<GameObject>(currentPath);
-        if (!adjustingTangents)
-        {
-            GameObject cursorPoint = new GameObject("CursorPoint");
-            cursorPoint.transform.position = GetSnappedPosition(GetMouseWorldPosition());
-            previewPath.Add(cursorPoint);
-
-            UpdateLineRenderer(lineRenderer, previewPath);
-
-            Destroy(cursorPoint); // Destruir el punto del cursor después de actualizar la vista previa
-        }
-        else
-        {
-            UpdateLineRenderer(lineRenderer, previewPath);
-        }
+        previewPoint = Instantiate(previewPointPrefab);
+        previewPoint.SetActive(false);
     }
 
     Vector3 GetMouseWorldPosition()
@@ -121,96 +77,117 @@ public class PathPlacement : MonoBehaviour
         return plane.Raycast(ray, out float distance) ? ray.GetPoint(distance) : Vector3.zero;
     }
 
-    void PlacePointAtObtainedPosition()
+    void PlaceOrSelectPoint()
     {
-        if (!pathPreview.activeSelf || adjustingTangents) return;
+        Vector3 position = GetSnappedPosition(GetMouseWorldPosition());
 
-        Vector3 position = GetSnappedPosition(pathPreview.transform.position);
+        foreach (var controlPoint in controlPointObjects.Values)
+        {
+            if (Vector3.Distance(position, controlPoint.transform.position) < snapDistance)
+            {
+                selectedControlPoint = controlPoint;
+                return;
+            }
+        }
+
+        if (existingPoints.Contains(position) && !adjustingCurveFor) return;
+
         GameObject newPoint = Instantiate(pointPrefab, position, Quaternion.identity);
         currentPath.Add(newPoint);
+        existingPoints.Add(position);
 
         if (currentPath.Count > 1 && useCurves)
         {
             GameObject previousPoint = currentPath[currentPath.Count - 2];
-            controlPoints[newPoint] = (previousPoint.transform.position + newPoint.transform.position) / 2;
+            Vector3 controlPointPosition = (previousPoint.transform.position + newPoint.transform.position) / 2;
+            GameObject controlPoint = Instantiate(controlPointPrefab, controlPointPosition, Quaternion.identity);
+            controlPoints[newPoint] = controlPointPosition;
+            controlPointObjects[newPoint] = controlPoint;
         }
 
-        UpdateLineRenderer(lineRenderer, currentPath);
+        UpdateMesh(meshFilter, currentPath);
     }
 
-    void AdjustTangents()
+    void AdjustCurve()
     {
-        if (currentPath.Count < 2) return;
+        if (!useCurves || adjustingCurveFor == null) return;
 
-        Vector3 mousePosition = GetMouseWorldPosition();
-        GameObject lastPoint = currentPath[currentPath.Count - 1];
-        controlPoints[lastPoint] = mousePosition;
+        Vector3 position = GetMouseWorldPosition();
+        if (controlPoints.ContainsKey(adjustingCurveFor))
+        {
+            controlPoints[adjustingCurveFor] = position;
+            controlPointObjects[adjustingCurveFor].transform.position = position;
+            UpdateMesh(meshFilter, currentPath);
+        }
+    }
 
-        UpdateLineRenderer(lineRenderer, currentPath);
+    void MoveControlPoint()
+    {
+        if (selectedControlPoint == null) return;
+
+        Vector3 position = GetMouseWorldPosition();
+        selectedControlPoint.transform.position = position;
+
+        foreach (var kvp in controlPointObjects)
+        {
+            if (kvp.Value == selectedControlPoint)
+            {
+                controlPoints[kvp.Key] = position;
+                break;
+            }
+        }
+
+        UpdateMesh(meshFilter, currentPath);
     }
 
     void RemoveLastPoint()
     {
         if (currentPath.Count == 0) return;
 
-        GameObject lastPoint = currentPath[currentPath.Count - 1];
+        GameObject lastPoint = currentPath.Last();
         currentPath.RemoveAt(currentPath.Count - 1);
-        Destroy(lastPoint);
+        existingPoints.Remove(lastPoint.transform.position);
+        if (controlPointObjects.ContainsKey(lastPoint))
+        {
+            Destroy(controlPointObjects[lastPoint]);
+            controlPointObjects.Remove(lastPoint);
+        }
         controlPoints.Remove(lastPoint);
+        Destroy(lastPoint);
 
-        UpdateLineRenderer(lineRenderer, currentPath);
+        UpdateMesh(meshFilter, currentPath);
     }
 
     void FinishCurrentPath()
     {
         if (currentPath.Count == 0) return;
 
-        paths.Add(new List<GameObject>(currentPath));
-
-        // Guardar el camino en la base de datos
         pathManager.SavePath(currentPath, controlPoints, useCurves);
 
-        // Crear un nuevo LineRenderer para el camino terminado
         GameObject finishedPath = new GameObject("FinishedPath");
-        LineRenderer finishedLineRenderer = finishedPath.AddComponent<LineRenderer>();
-        finishedLineRenderer.startWidth = 0.1f;
-        finishedLineRenderer.endWidth = 0.1f;
-        finishedLineRenderer.material = new Material(Shader.Find("Sprites/Default")) { color = Color.yellow };
+        MeshFilter finishedMeshFilter = finishedPath.AddComponent<MeshFilter>();
+        MeshRenderer finishedMeshRenderer = finishedPath.AddComponent<MeshRenderer>();
+        finishedMeshRenderer.material = pathMaterial ?? new Material(Shader.Find("Standard")) { color = Color.yellow };
 
-        pathOutlines.Add(finishedLineRenderer);
-        UpdateLineRenderer(finishedLineRenderer, currentPath);
+        pathMeshes.Add(finishedMeshFilter);
+        UpdateMesh(finishedMeshFilter, currentPath);
 
         currentPath.Clear();
         controlPoints.Clear();
-    }
-
-    void ClearCurrentPath()
-    {
-        foreach (GameObject point in currentPath)
+        foreach (var controlPoint in controlPointObjects.Values)
         {
-            Destroy(point);
+            Destroy(controlPoint);
         }
-        currentPath.Clear();
-        controlPoints.Clear();
-        UpdateLineRenderer(lineRenderer, currentPath);
+        controlPointObjects.Clear();
     }
 
-    void UpdateLineRenderer(LineRenderer lineRenderer, List<GameObject> path)
+    void UpdateMesh(MeshFilter meshFilter, List<GameObject> path)
     {
-        if (lineRenderer == null) return;
+        if (meshFilter == null || path.Count < 2) return;
 
-        List<Vector3> interpolatedPoints = InterpolatePath(path);
-        lineRenderer.positionCount = interpolatedPoints.Count;
-        for (int i = 0; i < interpolatedPoints.Count; i++)
-        {
-            lineRenderer.SetPosition(i, interpolatedPoints[i]);
-        }
-    }
-
-    List<Vector3> InterpolatePath(List<GameObject> path)
-    {
-        List<Vector3> interpolatedPoints = new List<Vector3>();
-        if (path.Count < 2) return interpolatedPoints;
+        Mesh mesh = new Mesh();
+        List<Vector3> vertices = new List<Vector3>();
+        List<int> triangles = new List<int>();
 
         for (int i = 0; i < path.Count - 1; i++)
         {
@@ -218,15 +195,42 @@ public class PathPlacement : MonoBehaviour
             Vector3 p1 = controlPoints.ContainsKey(path[i + 1]) && useCurves ? controlPoints[path[i + 1]] : (p0 + path[i + 1].transform.position) / 2;
             Vector3 p2 = path[i + 1].transform.position;
 
-            for (int j = 0; j < interpolationSteps; j++)
+            for (int j = 0; j <= interpolationSteps; j++)
             {
                 float t = j / (float)interpolationSteps;
-                interpolatedPoints.Add(Bezier(p0, p1, p2, t));
+                Vector3 point = useCurves ? Bezier(p0, p1, p2, t) : Vector3.Lerp(p0, p2, t);
+                Vector3 direction = ((useCurves ? Bezier(p0, p1, p2, t + 0.01f) : Vector3.Lerp(p0, p2, t + 0.01f)) - point).normalized;
+                Vector3 normal = Vector3.Cross(direction, Vector3.up).normalized;
+                vertices.Add(point + normal * pathWidth * 0.5f);
+                vertices.Add(point - normal * pathWidth * 0.5f);
+
+                if (vertices.Count >= 4)
+                {
+                    int baseIndex = vertices.Count - 4;
+                    triangles.Add(baseIndex);
+                    triangles.Add(baseIndex + 2);
+                    triangles.Add(baseIndex + 1);
+                    triangles.Add(baseIndex + 1);
+                    triangles.Add(baseIndex + 2);
+                    triangles.Add(baseIndex + 3);
+                }
             }
         }
 
-        interpolatedPoints.Add(path[path.Count - 1].transform.position);
-        return interpolatedPoints;
+        mesh.vertices = vertices.ToArray();
+        mesh.triangles = triangles.ToArray();
+        mesh.RecalculateNormals();
+
+        meshFilter.mesh = mesh;
+    }
+
+    void UpdatePreviewPoint()
+    {
+        if (!placementMode || previewPoint == null) return;
+
+        Vector3 position = GetSnappedPosition(GetMouseWorldPosition());
+        previewPoint.transform.position = position;
+        previewPoint.SetActive(true);
     }
 
     Vector3 Bezier(Vector3 p0, Vector3 p1, Vector3 p2, float t)
@@ -239,36 +243,47 @@ public class PathPlacement : MonoBehaviour
     {
         if (!enableSnap) return originalPosition;
 
-        // Implementar el sistema de imán y snap
-        Vector3 snappedPosition = originalPosition;
+        Vector3 closestPoint = originalPosition;
+        float closestDistance = snapDistance;
 
-        // Snap a puntos de caminos ya generados
-        foreach (var path in paths)
+        foreach (var point in existingPoints)
         {
-            foreach (var point in path)
+            if (currentPath.Any(p => p.transform.position == point)) continue; // Excluir puntos del mismo camino
+            if (controlPoints.Values.Contains(point)) continue; // Excluir puntos de control
+            float distance = Vector3.Distance(originalPosition, point);
+            if (distance < closestDistance)
             {
-                if (Vector3.Distance(originalPosition, point.transform.position) < snapDistance)
+                closestPoint = point;
+                closestDistance = distance;
+            }
+        }
+
+        foreach (var pathMesh in pathMeshes)
+        {
+            foreach (var vertex in pathMesh.mesh.vertices)
+            {
+                float distance = Vector3.Distance(originalPosition, vertex);
+                if (distance < closestDistance)
                 {
-                    return point.transform.position;
+                    closestPoint = vertex;
+                    closestDistance = distance;
                 }
             }
         }
 
-        // Snap a puertas de edificios
         if (buildingDatabase != null)
         {
             foreach (var doorPosition in buildingDatabase.GetAllDoorPositions())
             {
-                if (Vector3.Distance(originalPosition, doorPosition) < snapDistance)
+                float distance = Vector3.Distance(originalPosition, doorPosition);
+                if (distance < closestDistance)
                 {
-                    return doorPosition;
+                    closestPoint = doorPosition;
+                    closestDistance = distance;
                 }
             }
         }
 
-        return snappedPosition;
+        return closestPoint;
     }
 }
-
-
-

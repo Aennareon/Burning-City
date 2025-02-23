@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30e21b4790bc4f645b7d613e9e440091, type: 3}
-  m_Name: Palace(Clone)_5aeab635-2025-46f7-8f50-87fa4e467706_BuildingData
+  m_Name: HumanHouses(Clone)_d67c8c7a-5eee-45dd-845e-e445e2e6e4c0_BuildingData
   m_EditorClassIdentifier: 
-  buildingType: 0
-  districtZone: 0
+  buildingType: 1
+  districtZone: 3
   cityRaces: 0
-  buildingPosition: {x: 5.4729853, y: 0, z: 0.19290699}
-  buildingRotation: {x: -0, y: 192.42815, z: 0}
-  doorPosition: {x: 1.4, y: 0, z: 0}
-  buildingPrefab: {fileID: 2068138896878039827, guid: 002ba7664fae172409e4b2173394c8af, type: 3}
+  buildingPosition: {x: -2.7444787, y: 0, z: 4.3897595}
+  buildingRotation: {x: -0, y: 294.8377, z: 0}
+  doorPosition: {x: -4.16, y: 0, z: -1.49}
+  buildingPrefab: {fileID: 5218991761479745051, guid: 18c19d2559531af41ab56aa3d50a8a3e, type: 3}

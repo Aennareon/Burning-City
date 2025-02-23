@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingPlacement.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\PathSystem\CityPathManager.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingDataManager.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\PathSystem\CityPathLoader.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\DistrictSystem\GroupDatabase.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\PathSystem\CityPathData.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingData.cs" />

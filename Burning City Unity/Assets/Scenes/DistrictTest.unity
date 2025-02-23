@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 2008454947}
   - component: {fileID: 2008454948}
   - component: {fileID: 2008454949}
+  - component: {fileID: 2008454950}
   m_Layer: 0
   m_Name: PathManager
   m_TagString: Untagged
@@ -580,7 +581,7 @@ MonoBehaviour:
   curveAmount: 1
   interpolationSteps: 15
   placementMode: 1
-  useCurves: 0
+  useCurves: 1
   enableSnap: 1
   snapDistance: 5
   pathWidth: 1.5
@@ -602,6 +603,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathDatabase: {fileID: 11400000, guid: 214096ba58cd1d848bfa1e6334a3a8ad, type: 2}
   pathDataDirectory: Assets/Data/CityData/Paths
+--- !u!114 &2008454950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008454946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4569687b2efb3354fac1054afa5f299b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathDatabase: {fileID: 11400000, guid: 214096ba58cd1d848bfa1e6334a3a8ad, type: 2}
+  pointPrefab: {fileID: 7201476392224922230, guid: 5652c7ddeee23954e9cea623a156dd50, type: 3}
+  pathMaterial: {fileID: 2100000, guid: f0843edeb1bd7df4f90cad7c433414b6, type: 2}
+  pathWidth: 1.5
+  interpolationSteps: 15
+  noiseScale: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

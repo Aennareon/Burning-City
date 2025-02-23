@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ShaderGraph.Editor", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.Runtime", "Unity.RenderPipelines.Core.Runtime.csproj", "{E2EFA439-2F3E-FDC2-B069-CB72575CD26A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerryYellow.CodeAssist.Editor", "MerryYellow.CodeAssist.Editor.csproj", "{0952B005-843A-1DCA-7792-374EF3497041}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mathematics", "Unity.Mathematics.csproj", "{0DDD38B5-ABC6-A81F-44DC-AA6EC58F1960}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline.Editor", "Unity.Timeline.Editor.csproj", "{5B8EFA2C-A4E7-AF91-69E5-C947F7AA9E43}"
@@ -145,6 +147,10 @@ Global
 		{E2EFA439-2F3E-FDC2-B069-CB72575CD26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2EFA439-2F3E-FDC2-B069-CB72575CD26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2EFA439-2F3E-FDC2-B069-CB72575CD26A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0952B005-843A-1DCA-7792-374EF3497041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0952B005-843A-1DCA-7792-374EF3497041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0952B005-843A-1DCA-7792-374EF3497041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0952B005-843A-1DCA-7792-374EF3497041}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0DDD38B5-ABC6-A81F-44DC-AA6EC58F1960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0DDD38B5-ABC6-A81F-44DC-AA6EC58F1960}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DDD38B5-ABC6-A81F-44DC-AA6EC58F1960}.Release|Any CPU.ActiveCfg = Release|Any CPU

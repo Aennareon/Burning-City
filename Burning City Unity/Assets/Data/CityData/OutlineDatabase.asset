@@ -28,3 +28,4 @@ MonoBehaviour:
     outlinePrefab: {fileID: 1294435448965409986, guid: 2b7cc6b7eaa19614a80babaac2592474, type: 3}
   mixZoneOutline: {fileID: 3025332494940584284, guid: a5f3db89977aad540b0b78aa0d3345a4, type: 3}
   mixRaceOutline: {fileID: 5806968791036946406, guid: 481a30d3de70593438a2490b8d13b734, type: 3}
+  pathLineRenderer: {fileID: 4619047518163028460, guid: c0b8f31eb06f97a4295f390254c434d8, type: 3}

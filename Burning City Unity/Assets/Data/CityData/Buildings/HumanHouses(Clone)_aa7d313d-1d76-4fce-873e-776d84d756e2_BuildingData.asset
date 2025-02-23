@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e21b4790bc4f645b7d613e9e440091, type: 3}
+  m_Name: HumanHouses(Clone)_aa7d313d-1d76-4fce-873e-776d84d756e2_BuildingData
+  m_EditorClassIdentifier: 
+  buildingType: 1
+  districtZone: 3
+  cityRaces: 0
+  buildingPosition: {x: -0.6345002, y: 0, z: 15.636685}
+  buildingRotation: {x: -0, y: 91.48796, z: 0}
+  doorPosition: {x: -4.16, y: 0, z: -1.49}
+  buildingPrefab: {fileID: 5218991761479745051, guid: 18c19d2559531af41ab56aa3d50a8a3e, type: 3}

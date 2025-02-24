@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: City1
   m_EditorClassIdentifier: 
   cityName: City1
-  ActiveCity: 1
+  ActiveCity: 0
   DataPath: Assets/Data/CityData\City1
   buildingDatabase: {fileID: 11400000, guid: 4995a8faa1f6d2b4d8da14ffdfb2ecd7, type: 2}
   CityPathDatabase: {fileID: 11400000, guid: 862b50deb26151543929f071939387b2, type: 2}

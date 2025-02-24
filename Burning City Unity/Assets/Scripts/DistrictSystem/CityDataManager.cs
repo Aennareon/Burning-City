@@ -8,7 +8,6 @@ public class CityDataManager : MonoBehaviour
 {
     public string dataPath = "Assets/Data/CityData";
     public OutlineDatabase sharedOutlineDatabase; // Referencia a la instancia compartida de OutlineDatabase
-    private int cityCount = 0;
 
     void Awake()
     {
@@ -28,8 +27,7 @@ public class CityDataManager : MonoBehaviour
 
     public void CreateNewCityDataObject(bool setActive = false)
     {
-        cityCount++;
-        string cityName = "City" + cityCount;
+        string cityName = GetNextCityName();
 
         // Crear un nuevo CityDataObject
         CityDataObject newCityDataObject = ScriptableObject.CreateInstance<CityDataObject>();
@@ -84,6 +82,30 @@ public class CityDataManager : MonoBehaviour
         }
 
         Debug.Log("Nuevo CityDataObject creado: " + cityName);
+    }
+
+    private string GetNextCityName()
+    {
+        int maxCityNumber = 0;
+        string[] cityDataObjectPaths = Directory.GetFiles(Path.Combine(dataPath, "CityDataObjects"), "*.asset");
+
+        foreach (string path in cityDataObjectPaths)
+        {
+            string fileName = Path.GetFileNameWithoutExtension(path);
+            if (fileName.StartsWith("City"))
+            {
+                string numberPart = fileName.Substring(4);
+                if (int.TryParse(numberPart, out int cityNumber))
+                {
+                    if (cityNumber > maxCityNumber)
+                    {
+                        maxCityNumber = cityNumber;
+                    }
+                }
+            }
+        }
+
+        return "City" + (maxCityNumber + 1);
     }
 
     public void DestroyCityDataObject(CityDataObject cityDataObject)

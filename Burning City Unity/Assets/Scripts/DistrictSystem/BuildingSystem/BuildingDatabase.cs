@@ -16,6 +16,12 @@ public class BuildingDatabase : ScriptableObject
     public void UpdateDatabase()
     {
 #if UNITY_EDITOR
+        if (string.IsNullOrEmpty(directoryPath))
+        {
+            Debug.LogError("El directorio de la base de datos de edificios no está configurado.");
+            return;
+        }
+
         // Lógica para actualizar la base de datos desde el directorio
         UpdateDatabaseFromDirectory(directoryPath);
 #endif
@@ -24,6 +30,12 @@ public class BuildingDatabase : ScriptableObject
     public void UpdateDatabaseFromDirectory(string directoryPath)
     {
 #if UNITY_EDITOR
+        if (string.IsNullOrEmpty(directoryPath))
+        {
+            Debug.LogError("El directorio de la base de datos de edificios no está configurado.");
+            return;
+        }
+
         // Lógica para cargar los datos desde el directorio
         string[] assetPaths = AssetDatabase.FindAssets("t:BuildingData", new[] { directoryPath });
         buildingDataObjects = new BuildingData[assetPaths.Length];

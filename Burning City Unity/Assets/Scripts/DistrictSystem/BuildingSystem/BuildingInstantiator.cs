@@ -4,7 +4,7 @@ public class BuildingInstantiator : MonoBehaviour
 {
     public BuildingDatabase buildingDatabase;
 
-    private void Awake()
+    private void Start()
     {
         if (buildingDatabase == null)
         {

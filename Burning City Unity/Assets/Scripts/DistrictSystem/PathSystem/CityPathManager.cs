@@ -6,9 +6,9 @@ using System.IO;
 using UnityEditor;
 #endif
 
-public class CustomCityPathManager : MonoBehaviour
+public class CityPathManager : MonoBehaviour
 {
-    public CustomCityPathDatabase pathDatabase;
+    public CityPathDatabase pathDatabase;
     public string pathDataDirectory = "Assets/Data/CityData/Paths"; // Directorio para guardar los PathData
 
     public void SavePath(List<GameObject> pathPoints, Dictionary<GameObject, Vector3> controlPoints, bool useCurves)

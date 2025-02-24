@@ -1,4 +1,5 @@
 using System;
+using System.IO; // Importar para Path
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -17,8 +18,16 @@ public class BuildingDataManager : MonoBehaviour
         BuildingData buildingData = ScriptableObject.CreateInstance<BuildingData>();
         UpdateBuildingData(building, buildingData);
 
+        // Obtener el DataPath de la ciudad activa
+        CityDataObject activeCity = GetActiveCityDataObject();
+        if (activeCity == null)
+        {
+            Debug.LogError("No se encontró ninguna ciudad activa.");
+            return null;
+        }
+
         string uniqueID = System.Guid.NewGuid().ToString();
-        string path = $"Assets/Data/CityData/Buildings/{building.gameObject.name}_{uniqueID}_BuildingData.asset";
+        string path = Path.Combine(activeCity.DataPath, "Buildings", $"{building.gameObject.name}_{uniqueID}_BuildingData.asset");
         AssetDatabase.CreateAsset(buildingData, path);
         AssetDatabase.SaveAssets();
 
@@ -72,5 +81,18 @@ public class BuildingDataManager : MonoBehaviour
             OnBuildingDeleted?.Invoke(buildingData);
         }
 #endif
+    }
+
+    private CityDataObject GetActiveCityDataObject()
+    {
+        CityDataObject[] cityDataObjects = Resources.FindObjectsOfTypeAll<CityDataObject>();
+        foreach (CityDataObject cityDataObject in cityDataObjects)
+        {
+            if (cityDataObject.ActiveCity)
+            {
+                return cityDataObject;
+            }
+        }
+        return null;
     }
 }

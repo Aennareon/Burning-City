@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CityPathLoader : MonoBehaviour
 {
-    public CustomCityPathDatabase pathDatabase;
+    public CityPathDatabase pathDatabase;
     public GameObject pointPrefab;
     public Material pathMaterial;
     public float pathWidth = 1f;
@@ -12,6 +12,16 @@ public class CityPathLoader : MonoBehaviour
 
     void Start()
     {
+        // Asegurarse de que el pathDatabase esté configurado correctamente
+        if (pathDatabase == null || string.IsNullOrEmpty(pathDatabase.directoryPath))
+        {
+            Debug.LogError("El pathDatabase o su directorio no está configurado correctamente.");
+            return;
+        }
+
+        // Actualizar la base de datos antes de cargar los caminos
+        pathDatabase.UpdateDatabase();
+
         LoadPaths();
     }
 

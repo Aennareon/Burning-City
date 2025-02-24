@@ -69,12 +69,14 @@
     <Compile Include="Assets\Scripts\DistrictSystem\PathSystem\CityPathDatabase.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingPlacement.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\PathSystem\CityPathManager.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\CityDataManager.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingDataManager.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\PathSystem\CityPathLoader.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\DistrictSystem\GroupDatabase.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\PathSystem\CityPathData.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingData.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingInstantiator.cs" />
+    <Compile Include="Assets\Scripts\DistrictSystem\CityDataObject.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\BuildingSystem\BuildingObject.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\DistrictSystem\BuildingOutline.cs" />
     <Compile Include="Assets\Scripts\DistrictSystem\DistrictSystem\BuildingGroupManager.cs" />

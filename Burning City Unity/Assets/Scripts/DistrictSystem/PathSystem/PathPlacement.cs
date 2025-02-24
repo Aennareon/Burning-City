@@ -17,7 +17,7 @@ public class PathPlacement : MonoBehaviour
     public float pathWidth = 1f;
     public Material pathMaterial;
     public BuildingDatabase buildingDatabase;
-    public CustomCityPathManager pathManager;
+    public CityPathManager pathManager;
     public float noiseScale = 0.1f;
 
     private List<GameObject> currentPath = new List<GameObject>();

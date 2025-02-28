@@ -418,7 +418,7 @@ MonoBehaviour:
   buildingPreview: {fileID: 0}
   movementSmoothness: 5
   rotationSpeed: 120
-  placementMode: 0
+  placementMode: 1
   rotationMode: 1
 --- !u!114 &2352945792727160745
 MonoBehaviour:
@@ -584,7 +584,7 @@ MonoBehaviour:
   movementSmoothness: 10
   curveAmount: 1
   interpolationSteps: 15
-  placementMode: 1
+  placementMode: 0
   useCurves: 1
   enableSnap: 1
   snapDistance: 5
